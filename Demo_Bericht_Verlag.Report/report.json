@@ -3881,13 +3881,13 @@
           "z": 107000.00
         },
         {
-          "config": "{\"name\":\"5a3bb76295d4517d5682\",\"layouts\":[{\"id\":0,\"position\":{\"x\":14.895267649340573,\"y\":347.55624515128005,\"z\":9001,\"width\":299.8913886733902,\"height\":39.72071373157486,\"tabOrder\":298001}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Das ist ein Textfeld\"}]}]}}]}}}",
+          "config": "{\"name\":\"5a3bb76295d4517d5682\",\"layouts\":[{\"id\":0,\"position\":{\"x\":14.895267649340573,\"y\":347.55624515128005,\"z\":10000,\"width\":299.8913886733902,\"height\":39.72071373157486,\"tabOrder\":298001}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Das ist ein Textfeld vom 25.04.2025\",\"textStyle\":{\"fontWeight\":\"bold\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0}}}}}}}]}}}",
           "filters": "[]",
           "height": 39.72,
           "width": 299.89,
           "x": 14.90,
           "y": 347.56,
-          "z": 9001.00
+          "z": 10000.00
         },
         {
           "config": "{\"name\":\"5ae09e574682597bc248\",\"layouts\":[{\"id\":0,\"position\":{\"x\":495,\"y\":605,\"z\":262000,\"width\":40.24844720496894,\"height\":40.24844720496894,\"tabOrder\":262000}}],\"singleVisual\":{\"visualType\":\"basicShape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"line\":[{\"properties\":{\"weight\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"roundEdge\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"lockAspect\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}},\"parentGroupName\":\"c9026ca984387f092715\"}",
