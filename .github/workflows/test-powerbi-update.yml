@@ -58,7 +58,7 @@ jobs:
       - name: Get Git credentials
         run: |
           echo "Frage credentials ab..."
-          curl -X POST "https://api.fabric.microsoft.com/v1/workspaces/${{ secrets.PBI_WORKSPACE_ID }}/git/myGitCredentials" \
+          curl -X PATCH "https://api.fabric.microsoft.com/v1/workspaces/${{ secrets.PBI_WORKSPACE_ID }}/git/myGitCredentials" \
             -H "Authorization: Bearer $ACCESS_TOKEN" \
             -H "Content-Type: application/json" \
             -d "{
