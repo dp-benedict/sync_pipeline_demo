@@ -25,19 +25,22 @@ jobs:
 
           echo "ACCESS_TOKEN=$(echo $response | jq -r '.access_token')" >> $GITHUB_ENV
 
-      - name: Set Git Credentials
-        id: set_git_credentials
+      - name: Set Git Credentials in Power BI Workspace
         run: |
-          echo "🌐 Setting GitHub credentials in Power BI Workspace..."
-          response=$(curl -s -w "%{http_code}" -o patch_response.json -X PATCH "https://api.fabric.microsoft.com/v1/workspaces/${{ secrets.PBI_WORKSPACE_ID }}/git/myGitCredentials" \
+          echo "🔐 Setting Git credentials..."
+      
+          payload=$(jq -n --arg token "${{ secrets.PAT }}" '{provider: "GitHub", accessToken: $token}')
+      
+          response=$(curl -s -w "%{http_code}" -o patch_response.json -X PATCH \
+            "https://api.fabric.microsoft.com/v1/workspaces/${{ secrets.PBI_WORKSPACE_ID }}/git/myGitCredentials" \
             -H "Authorization: Bearer $ACCESS_TOKEN" \
             -H "Content-Type: application/json" \
-            -d "{ \"provider\": \"GitHub\", \"accessToken\": \"${{ secrets.PAT }}\" }")
-
+            -d "$payload")
+      
           echo "Status Code: $response"
-          echo "Response Body:"
+          echo "Response:"
           cat patch_response.json
-
+      
           if [[ "$response" != "200" ]]; then
             echo "🚨 Failed to set Git Credentials!"
             exit 1
