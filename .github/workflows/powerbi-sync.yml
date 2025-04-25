@@ -5,6 +5,9 @@ on:
     branches:
       - demo_report_source
 
+permissions:
+  contents: write  # <--- WICHTIG für git push
+
 jobs:
   sync-folders-and-powerbi:
     runs-on: ubuntu-latest
