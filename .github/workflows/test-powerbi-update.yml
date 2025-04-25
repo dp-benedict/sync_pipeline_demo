@@ -55,23 +55,16 @@ jobs:
 
           echo "ACCESS_TOKEN=$(echo $response | jq -r '.access_token')" >> $GITHUB_ENV
 
-      - name: Get Git credentials
+      - name: Set Git credentials in Power BI workspace
         run: |
-          echo "Frage credentials ab..."
           curl -X PATCH "https://api.fabric.microsoft.com/v1/workspaces/${{ secrets.PBI_WORKSPACE_ID }}/git/myGitCredentials" \
             -H "Authorization: Bearer $ACCESS_TOKEN" \
             -H "Content-Type: application/json" \
             -d "{
-              \"workspaceHead\": \"${workspaceHead}\",
-              \"remoteCommitHash\": \"${remoteCommitHash}\",
-              \"conflictResolution\": {
-                \"conflictResolutionType\": \"Workspace\",
-                \"conflictResolutionPolicy\": \"PreferRemote\"
-              },
-              \"options\": {
-                \"allowOverrideItems\": true
-              }
-            }"
+                  \"provider\": \"GitHub\",
+                  \"accessToken\": \"${{ secrets.PAT }}\"
+                }"
+      
 
       - name: Trigger Power BI Git updateFromGit
         run: |
