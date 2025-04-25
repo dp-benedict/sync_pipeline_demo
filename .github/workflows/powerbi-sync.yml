@@ -9,7 +9,7 @@ jobs:
   sync-folders-and-powerbi:
     runs-on: ubuntu-latest
     env:
-      FOLDERS_TO_COPY: "sales_report.Report"
+      FOLDERS_TO_COPY: "Demo_Bericht_Verlag.Report"
 
     steps:
       - name: Checkout Repo
