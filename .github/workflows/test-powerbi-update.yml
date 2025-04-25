@@ -32,7 +32,7 @@ jobs:
           response=$(curl -s -w "%{http_code}" -o patch_response.json -X PATCH "https://api.fabric.microsoft.com/v1/workspaces/${{ secrets.PBI_WORKSPACE_ID }}/git/myGitCredentials" \
             -H "Authorization: Bearer $ACCESS_TOKEN" \
             -H "Content-Type: application/json" \
-            -d "{ \"provider\": \"GitHub\", \"accessToken\": \"${{ secrets.GITHUB_PAT }}\" }")
+            -d "{ \"provider\": \"GitHub\", \"accessToken\": \"${{ secrets.PAT }}\" }")
 
           echo "Status Code: $response"
           echo "Response Body:"
