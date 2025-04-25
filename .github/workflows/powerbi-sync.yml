@@ -1,0 +1,62 @@
+name: Power BI Git Sync
+
+on:
+  push:
+    branches:
+      - demo_report_source
+
+jobs:
+  sync-folders-and-powerbi:
+    runs-on: ubuntu-latest
+    env:
+      FOLDERS_TO_COPY: "Demo_Bericht_Verlag.Report"
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+
+      - name: Copy Folders from demo_report_source to gf_reportings
+        run: |
+          git checkout gf_reportings
+          git pull origin gf_reportings
+
+          git checkout demo_report_source
+
+          mkdir -p tmp_copy
+          for folder in $FOLDERS_TO_COPY; do
+            echo "Copying $folder..."
+            cp -R $folder tmp_copy/
+          done
+
+          git checkout gf_reportings
+
+          for folder in $FOLDERS_TO_COPY; do
+            rm -rf $folder
+            mv tmp_copy/$(basename $folder) $folder
+            git add $folder
+          done
+
+          git commit -m "Sync selected folders from demo_report_source to gf_reportings" || echo "No changes"
+          git push origin gf_reportings
+
+      - name: Get Power BI Token
+        id: get_token
+        run: |
+          response=$(curl -s -X POST -H "Content-Type: application/x-www-form-urlencoded" \
+            -d "grant_type=client_credentials&client_id=${{ secrets.PBI_CLIENT_ID }}&client_secret=${{ secrets.PBI_CLIENT_SECRET }}&scope=https://analysis.windows.net/powerbi/api/.default" \
+            https://login.microsoftonline.com/${{ secrets.PBI_TENANT_ID }}/oauth2/v2.0/token)
+          echo "ACCESS_TOKEN=$(echo $response | jq -r '.access_token')" >> $GITHUB_ENV
+
+      - name: Trigger Power BI Git Update
+        run: |
+          curl -X POST "https://api.fabric.microsoft.com/v1/workspaces/${{ secrets.PBI_WORKSPACE_ID }}/git/updateFromGit" \
+            -H "Authorization: Bearer $ACCESS_TOKEN" \
+            -H "Content-Type: application/json" \
+            -d '{}'
