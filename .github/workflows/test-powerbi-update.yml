@@ -64,7 +64,6 @@ jobs:
                   \"provider\": \"GitHub\",
                   \"accessToken\": \"${{ secrets.PAT }}\"
                 }"
-      
 
       - name: Trigger Power BI Git updateFromGit
         run: |
