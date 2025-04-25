@@ -62,4 +62,14 @@ jobs:
           curl -X POST "https://api.fabric.microsoft.com/v1/workspaces/${{ secrets.PBI_WORKSPACE_ID }}/git/updateFromGit" \
             -H "Authorization: Bearer $ACCESS_TOKEN" \
             -H "Content-Type: application/json" \
-            -d '{}'
+            -d "{
+              \"workspaceHead\": \"${workspaceHead}\",
+              \"remoteCommitHash\": \"${remoteCommitHash}\",
+              \"conflictResolution\": {
+                \"conflictResolutionType\": \"Workspace\",
+                \"conflictResolutionPolicy\": \"PreferRemote\"
+              },
+              \"options\": {
+                \"allowOverrideItems\": true
+              }
+            }"
