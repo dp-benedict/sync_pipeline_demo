@@ -57,6 +57,42 @@ jobs:
             https://login.microsoftonline.com/${{ secrets.PBI_TENANT_ID }}/oauth2/v2.0/token)
           echo "ACCESS_TOKEN=$(echo $response | jq -r '.access_token')" >> $GITHUB_ENV
 
+      - name: Get my credentials
+        run: |
+          echo "🔍 Checking Git integration in Fabric workspace..."
+      
+          response=$(curl -s -w "%{http_code}" -o response.json \
+            -X GET "https://api.fabric.microsoft.com/v1/workspaces/${{ secrets.PBI_WORKSPACE_ID }}/git/myGitCredentials" \
+            -H "Authorization: Bearer $ACCESS_TOKEN" \
+            -H "Content-Type: application/json")
+      
+          echo "Status Code: $response"
+          echo "Response Body:"
+          cat response.json | jq
+      
+          if [[ "$response" != "200" ]]; then
+            echo "❌ Credentials couldn't be returned."
+            exit 1
+          fi
+
+      - name: Get Latest Commit Hash from GitHub
+        id: get_remote_commit
+        run: |
+          latest_commit=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/repos/dp-benedict/sync_pipeline_demo/commits/gf_reportings" | jq -r '.sha')
+      
+          echo "REMOTE_COMMIT=$latest_commit" >> $GITHUB_ENV
+
+      - name: Get Current Workspace Head
+        id: get_workspace_head
+        run: |
+          workspace_head=$(curl -s -X GET \
+            "https://api.fabric.microsoft.com/v1/workspaces/${{ secrets.PBI_WORKSPACE_ID }}/git/connection" \
+            -H "Authorization: Bearer $ACCESS_TOKEN" \
+            -H "Content-Type: application/json" | jq -r '.gitSyncDetails.head')
+      
+          echo "WORKSPACE_HEAD=$workspace_head" >> $GITHUB_ENV
+
       - name: Trigger Power BI Git Update
         run: |
           curl -X POST "https://api.fabric.microsoft.com/v1/workspaces/${{ secrets.PBI_WORKSPACE_ID }}/git/updateFromGit" \
