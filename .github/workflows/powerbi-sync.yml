@@ -99,8 +99,8 @@ jobs:
             -H "Authorization: Bearer $ACCESS_TOKEN" \
             -H "Content-Type: application/json" \
             -d "{
-              \"workspaceHead\": \"${workspaceHead}\",
-              \"remoteCommitHash\": \"${remoteCommitHash}\",
+              \"workspaceHead\": \"${WORKSPACE_HEAD}\",
+              \"remoteCommitHash\": \"${REMOTE_COMMIT}\",
               \"conflictResolution\": {
                 \"conflictResolutionType\": \"Workspace\",
                 \"conflictResolutionPolicy\": \"PreferRemote\"
