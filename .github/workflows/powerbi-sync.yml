@@ -75,37 +75,32 @@ jobs:
             exit 1
           fi
 
-      - name: Get Latest Commit Hash from GitHub
-        id: get_remote_commit
+      - name: Get latest GitHub Commit (Remote)
         run: |
-          latest_commit=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+          REMOTE_COMMIT=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
             "https://api.github.com/repos/dp-benedict/sync_pipeline_demo/commits/gf_reportings" | jq -r '.sha')
+          echo "REMOTE_COMMIT=$REMOTE_COMMIT" >> $GITHUB_ENV
       
-          echo "REMOTE_COMMIT=$latest_commit" >> $GITHUB_ENV
-
-      - name: Get Current Workspace Head
-        id: get_workspace_head
+      - name: Get Workspace Head Commit (Fabric)
         run: |
-          workspace_head=$(curl -s -X GET \
-            "https://api.fabric.microsoft.com/v1/workspaces/${{ secrets.PBI_WORKSPACE_ID }}/git/connection" \
+          WORKSPACE_HEAD=$(curl -s -X GET "https://api.fabric.microsoft.com/v1/workspaces/${{ secrets.PBI_WORKSPACE_ID }}/git/connection" \
             -H "Authorization: Bearer $ACCESS_TOKEN" \
             -H "Content-Type: application/json" | jq -r '.gitSyncDetails.head')
+          echo "WORKSPACE_HEAD=$WORKSPACE_HEAD" >> $GITHUB_ENV
       
-          echo "WORKSPACE_HEAD=$workspace_head" >> $GITHUB_ENV
-
       - name: Trigger Power BI Git Update
         run: |
           curl -X POST "https://api.fabric.microsoft.com/v1/workspaces/${{ secrets.PBI_WORKSPACE_ID }}/git/updateFromGit" \
             -H "Authorization: Bearer $ACCESS_TOKEN" \
             -H "Content-Type: application/json" \
             -d "{
-              \"workspaceHead\": \"${WORKSPACE_HEAD}\",
-              \"remoteCommitHash\": \"${REMOTE_COMMIT}\",
-              \"conflictResolution\": {
-                \"conflictResolutionType\": \"Workspace\",
-                \"conflictResolutionPolicy\": \"PreferRemote\"
-              },
-              \"options\": {
-                \"allowOverrideItems\": true
-              }
-            }"
+                  \"workspaceHead\": \"${WORKSPACE_HEAD}\",
+                  \"remoteCommitHash\": \"${REMOTE_COMMIT}\",
+                  \"conflictResolution\": {
+                    \"conflictResolutionType\": \"Workspace\",
+                    \"conflictResolutionPolicy\": \"PreferRemote\"
+                  },
+                  \"options\": {
+                    \"allowOverrideItems\": true
+                  }
+                }"
