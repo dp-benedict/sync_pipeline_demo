@@ -6,13 +6,13 @@ on:
       - demo_report_source
 
 permissions:
-  contents: write  # <--- WICHTIG für git push
+  contents: write
 
 jobs:
   sync-folders-and-powerbi:
     runs-on: ubuntu-latest
     env:
-      FOLDERS_TO_COPY: "Demo_Bericht_Verlag.Report"
+      FOLDERS_TO_COPY: "Demo_Bericht_Verlag.Report" # Hier müssen die Reporting-Ordner, die synchronisiert werden sollen eingetragen werden
 
     steps:
       - name: Checkout Repo
@@ -25,12 +25,12 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
 
-      - name: Copy Folders from demo_report_source to gf_reportings
+      - name: Copy Folders from source to target
         run: |
-          git checkout gf_reportings
-          git pull origin gf_reportings
+          git checkout gf_reportings   # target branch
+          git pull origin gf_reportings # target branch
 
-          git checkout demo_report_source
+          git checkout demo_report_source # source branch
 
           mkdir -p tmp_copy
           for folder in $FOLDERS_TO_COPY; do
@@ -38,7 +38,7 @@ jobs:
             cp -R $folder tmp_copy/
           done
 
-          git checkout gf_reportings
+          git checkout gf_reportings # target branch
 
           for folder in $FOLDERS_TO_COPY; do
             rm -rf $folder
@@ -47,7 +47,7 @@ jobs:
           done
 
           git commit -m "Sync selected folders from demo_report_source to gf_reportings" || echo "No changes"
-          git push origin gf_reportings
+          git push origin gf_reportings # target branch
 
       - name: Get Power BI Token
         id: get_token
@@ -59,7 +59,7 @@ jobs:
 
       - name: Get my credentials
         run: |
-          echo "🔍 Checking Git integration in Fabric workspace..."
+          echo "Checking Git integration in Fabric workspace..."
       
           response=$(curl -s -w "%{http_code}" -o response.json \
             -X GET "https://api.fabric.microsoft.com/v1/workspaces/${{ secrets.PBI_WORKSPACE_ID }}/git/myGitCredentials" \
@@ -71,7 +71,7 @@ jobs:
           cat response.json | jq
       
           if [[ "$response" != "200" ]]; then
-            echo "❌ Credentials couldn't be returned."
+            echo "Credentials couldn't be returned."
             exit 1
           fi
 
