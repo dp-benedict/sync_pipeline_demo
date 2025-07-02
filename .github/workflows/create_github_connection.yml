@@ -22,7 +22,7 @@ jobs:
 
       - name: Create Fabric GitHub Connection
         run: |
-          echo "🚀 Creating Fabric GitHub Connection..."
+          echo "Creating Fabric GitHub Connection..."
 
           payload=$(jq -n \
             --arg url "https://github.com/dp-benedict/sync_pipeline_demo" \
@@ -59,12 +59,12 @@ jobs:
           cat connection_response.json
 
           if [[ "$response" != "201" ]]; then
-            echo "🚨 Failed to create GitHub Connection!"
+            echo "Failed to create GitHub Connection!"
             exit 1
           fi
 
       - name: Output Created Connection ID
         run: |
-          echo "🔍 Extracting created Connection ID..."
+          echo "Extracting created Connection ID..."
           CONNECTION_ID=$(jq -r '.id' connection_response.json)
           echo "Created Connection ID: $CONNECTION_ID"
