@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "query_del2_data",
+    "description": "Abfrage von Daten der DEL2 (Ligatabelle und diverse Spielerstatistiken), die öffentlich verfügbar sind (über die DEL2 Website)."
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "5240cb61-1fef-ac41-43d4-f64c754c8261"
+  }
+}

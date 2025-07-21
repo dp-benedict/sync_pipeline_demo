@@ -1,0 +1,16 @@
+relationship adf6a290-9955-3453-b3dd-b01953dcbef4
+	fromColumn: s_heads.Regulierer
+	toColumn: g_geschaeftspartner.Geschäftspartner_ID
+
+relationship 9cd0a07d-ae72-c777-4af7-526244e65c70
+	fromColumn: s_items.'Faktura_Nr.'
+	toColumn: s_heads.'Faktura_Nr.'
+
+relationship 8910d80d-e843-082b-4d6e-1995d8c72d9d
+	fromColumn: s_items.Produkt_ID
+	toColumn: s_produkt_hierarchie.Produkt_ID
+
+relationship 64a2dccb-515f-4b27-55ae-af5b89751368
+	fromColumn: s_heads.Datum
+	toColumn: g_calendar.Date
+

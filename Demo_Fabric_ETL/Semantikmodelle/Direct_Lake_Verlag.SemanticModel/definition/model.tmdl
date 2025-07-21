@@ -1,0 +1,28 @@
+model Model
+	culture: en-US
+	collation: Latin1_General_100_BIN2_UTF8
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBIDesktopVersion = 2.134.7433.1 (Main)
+
+annotation PBI_QueryOrder = ["DatabaseQuery"]
+
+annotation PBI_ProTooling = ["WebModelingEdit"]
+
+annotation __PBIService_Versioning_SaveVersion = e0d64445-8359-4419-8aab-c0dbe061c86f
+
+ref table s_items
+ref table s_produkt_hierarchie
+ref table s_heads
+ref table g_geschaeftspartner
+ref table g_calendar
+ref table s_bildurls
+
+ref cultureInfo en-US
+

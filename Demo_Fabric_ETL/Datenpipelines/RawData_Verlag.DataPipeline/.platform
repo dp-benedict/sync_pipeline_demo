@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataPipeline",
+    "displayName": "RawData_Verlag"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "5505c8a2-e0fa-b1ba-46cd-863b83190de4"
+  }
+}

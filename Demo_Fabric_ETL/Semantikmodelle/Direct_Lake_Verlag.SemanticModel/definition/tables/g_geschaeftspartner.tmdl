@@ -1,0 +1,528 @@
+table g_geschaeftspartner
+	lineageTag: ba2ba6de-4abb-4ab7-ab84-44c4f34bbb91
+	sourceLineageTag: [dbo].[g_geschaeftspartner]
+
+	column Geschäftspartner_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 652bad42-9a3d-4ee4-a469-7e476a6a1fec
+		sourceLineageTag: Geschäftspartner_ID
+		summarizeBy: none
+		sourceColumn: Geschäftspartner_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Name_1
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a16beecb-51cd-4f3f-8d9a-4b4c39246e36
+		sourceLineageTag: Name_1
+		summarizeBy: none
+		sourceColumn: Name_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column Name_2
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 50ba13b7-046d-432b-8e59-edde802f4762
+		sourceLineageTag: Name_2
+		summarizeBy: none
+		sourceColumn: Name_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Name_3
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 152ddad9-de8c-43d4-8182-d1712aa58a3f
+		sourceLineageTag: Name_3
+		summarizeBy: none
+		sourceColumn: Name_3
+
+		annotation SummarizationSetBy = Automatic
+
+	column Name_4
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 3e42a662-76f8-4c98-b226-45d5f1075ebf
+		sourceLineageTag: Name_4
+		summarizeBy: none
+		sourceColumn: Name_4
+
+		annotation SummarizationSetBy = Automatic
+
+	column Branchencode
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 99b44e6e-7cf7-49ce-b13d-2ff7731b105b
+		sourceLineageTag: Branchencode
+		summarizeBy: none
+		sourceColumn: Branchencode
+
+		annotation SummarizationSetBy = Automatic
+
+	column Straße
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: d9b48173-2613-4ab6-88c4-ed0ecc9043fd
+		sourceLineageTag: Straße
+		summarizeBy: none
+		sourceColumn: Straße
+
+		annotation SummarizationSetBy = Automatic
+
+	column Hausnummer
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 308ac1b5-fcc9-42b5-a6f6-7fb87a1ba27c
+		sourceLineageTag: Hausnummer
+		summarizeBy: none
+		sourceColumn: Hausnummer
+
+		annotation SummarizationSetBy = Automatic
+
+	column Postleitzahl
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: c234b63a-c35d-4b48-b96d-58499464633e
+		sourceLineageTag: Postleitzahl
+		summarizeBy: none
+		sourceColumn: Postleitzahl
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ort
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 5417b004-1e4d-4718-8384-5ceb8ed10520
+		sourceLineageTag: Ort
+		summarizeBy: none
+		sourceColumn: Ort
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ländercode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b3df1e59-c575-4dff-bc87-a7f0268a041f
+		sourceLineageTag: Ländercode
+		summarizeBy: none
+		sourceColumn: Ländercode
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Plz._Postfach'
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 570a6d84-1ceb-4964-b2cb-f4a3ea1e1663
+		sourceLineageTag: Plz._Postfach
+		summarizeBy: none
+		sourceColumn: Plz._Postfach
+
+		annotation SummarizationSetBy = Automatic
+
+	column Postfach
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 46c20811-d2ba-4495-98dc-bab9a3a40736
+		sourceLineageTag: Postfach
+		summarizeBy: none
+		sourceColumn: Postfach
+
+		annotation SummarizationSetBy = Automatic
+
+	column Telefon
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 1fbe481e-2564-4345-8152-0b464151122e
+		sourceLineageTag: Telefon
+		summarizeBy: none
+		sourceColumn: Telefon
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mobiltelefon
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 9b67234c-49b8-492c-981c-c21cdf083d00
+		sourceLineageTag: Mobiltelefon
+		summarizeBy: none
+		sourceColumn: Mobiltelefon
+
+		annotation SummarizationSetBy = Automatic
+
+	column E-Mail
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 59903f0c-86d5-4695-acb9-7c10849b0881
+		sourceLineageTag: E-Mail
+		summarizeBy: none
+		sourceColumn: E-Mail
+
+		annotation SummarizationSetBy = Automatic
+
+	column Werbesperre_Mail
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b4b877de-7692-458b-acc1-e165e7ee47d5
+		sourceLineageTag: Werbesperre_Mail
+		summarizeBy: none
+		sourceColumn: Werbesperre_Mail
+
+		annotation SummarizationSetBy = Automatic
+
+	column Werbesperre_Fax
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 7830eba2-f222-4a48-9b7c-79e424249503
+		sourceLineageTag: Werbesperre_Fax
+		summarizeBy: none
+		sourceColumn: Werbesperre_Fax
+
+		annotation SummarizationSetBy = Automatic
+
+	column Werbesperre_Post
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: edfc8ed8-3f56-4f66-935f-5c9c743bbce5
+		sourceLineageTag: Werbesperre_Post
+		summarizeBy: none
+		sourceColumn: Werbesperre_Post
+
+		annotation SummarizationSetBy = Automatic
+
+	column Werbesperre_Telefon
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 5802f0bd-46dc-4974-8611-03af80dd8a5c
+		sourceLineageTag: Werbesperre_Telefon
+		summarizeBy: none
+		sourceColumn: Werbesperre_Telefon
+
+		annotation SummarizationSetBy = Automatic
+
+	column Anzahl_Betten
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 4beae592-5b49-40cf-ab07-62a37d7d4894
+		sourceLineageTag: Anzahl_Betten
+		summarizeBy: none
+		sourceColumn: Anzahl_Betten
+
+		annotation SummarizationSetBy = Automatic
+
+	column KIS/AIS/PVS
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: eccd9ec1-bccd-4534-9aab-3b09f62ec0ef
+		sourceLineageTag: KIS/AIS/PVS
+		summarizeBy: none
+		sourceColumn: KIS/AIS/PVS
+
+		annotation SummarizationSetBy = Automatic
+
+	column WLAN
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b7d8f557-693a-4ba2-bacc-563aefa2167f
+		sourceLineageTag: WLAN
+		summarizeBy: none
+		sourceColumn: WLAN
+
+		annotation SummarizationSetBy = Automatic
+
+	column ABC_Klassifizierung
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: db01004c-4aac-43bc-92de-b128fe207ad4
+		sourceLineageTag: ABC_Klassifizierung
+		summarizeBy: none
+		sourceColumn: ABC_Klassifizierung
+
+		annotation SummarizationSetBy = Automatic
+
+	column Anzahl_Ärzte
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: dc0d8c7e-a0af-4cbf-9102-b04bb3e87bbb
+		sourceLineageTag: Anzahl_Ärzte
+		summarizeBy: none
+		sourceColumn: Anzahl_Ärzte
+
+		annotation SummarizationSetBy = Automatic
+
+	column Betreuung
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 02565542-b984-4227-b2f1-c8c668d6e21e
+		sourceLineageTag: Betreuung
+		summarizeBy: none
+		sourceColumn: Betreuung
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Anzahl_EDP_Dok.'
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 7672a69d-11b3-4aac-a713-ffd3913efb27
+		sourceLineageTag: Anzahl_EDP_Dok.
+		summarizeBy: none
+		sourceColumn: Anzahl_EDP_Dok.
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fallzahl
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a78b6d65-fd7d-4a03-acc0-fd7c4375f6b7
+		sourceLineageTag: Fallzahl
+		summarizeBy: none
+		sourceColumn: Fallzahl
+
+		annotation SummarizationSetBy = Automatic
+
+	column Infrastruktur
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 76b25e7f-0870-43e7-a47a-717ac7b319e9
+		sourceLineageTag: Infrastruktur
+		summarizeBy: none
+		sourceColumn: Infrastruktur
+
+		annotation SummarizationSetBy = Automatic
+
+	column Portalkunde
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ff1a3175-73e3-4130-a1a0-d2ffd9e6d3fd
+		sourceLineageTag: Portalkunde
+		summarizeBy: none
+		sourceColumn: Portalkunde
+
+		annotation SummarizationSetBy = Automatic
+
+	column Referenzkunde
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: eea531bf-1271-4a1a-bfd1-c50847324162
+		sourceLineageTag: Referenzkunde
+		summarizeBy: none
+		sourceColumn: Referenzkunde
+
+		annotation SummarizationSetBy = Automatic
+
+	column Schnittstellentechnologie
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 56eb92e4-60ba-4094-93de-1ead856f9801
+		sourceLineageTag: Schnittstellentechnologie
+		summarizeBy: none
+		sourceColumn: Schnittstellentechnologie
+
+		annotation SummarizationSetBy = Automatic
+
+	column Browser
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 9e3388d6-7a0c-4edd-877d-d1b1b1011246
+		sourceLineageTag: Browser
+		summarizeBy: none
+		sourceColumn: Browser
+
+		annotation SummarizationSetBy = Automatic
+
+	column Clientplattform
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 6586eee0-007e-4bca-b67d-797c62f6691a
+		sourceLineageTag: Clientplattform
+		summarizeBy: none
+		sourceColumn: Clientplattform
+
+		annotation SummarizationSetBy = Automatic
+
+	column Datenbank
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 66e74166-f2fe-48cf-bc32-102b3891f3e4
+		sourceLineageTag: Datenbank
+		summarizeBy: none
+		sourceColumn: Datenbank
+
+		annotation SummarizationSetBy = Automatic
+
+	column ECP
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 3e86f61a-5439-4359-aca7-b8dcf2d8fc75
+		sourceLineageTag: ECP
+		summarizeBy: none
+		sourceColumn: ECP
+
+		annotation SummarizationSetBy = Automatic
+
+	column JAVA
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: d7aa031b-06a0-4d96-96f4-1f98bdee8977
+		sourceLineageTag: JAVA
+		summarizeBy: none
+		sourceColumn: JAVA
+
+		annotation SummarizationSetBy = Automatic
+
+	column Lizenzsequenz
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 0567c7dd-d66a-48e3-b1b9-8ed2d50b384b
+		sourceLineageTag: Lizenzsequenz
+		summarizeBy: none
+		sourceColumn: Lizenzsequenz
+
+		annotation SummarizationSetBy = Automatic
+
+	column Offline
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 8279a90c-1ba9-45cf-ac5b-1c874b9d4221
+		sourceLineageTag: Offline
+		summarizeBy: none
+		sourceColumn: Offline
+
+		annotation SummarizationSetBy = Automatic
+
+	column Server
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 60126821-8773-4f41-a1cf-3100eb7c4356
+		sourceLineageTag: Server
+		summarizeBy: none
+		sourceColumn: Server
+
+		annotation SummarizationSetBy = Automatic
+
+	column AirPrint_Drucker
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: dbbe428f-5842-406b-9990-1272e8a69cd5
+		sourceLineageTag: AirPrint_Drucker
+		summarizeBy: none
+		sourceColumn: AirPrint_Drucker
+
+		annotation SummarizationSetBy = Automatic
+
+	column Bedside_Terminals
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 8a6bcd4d-0b40-4f69-9f88-4965bc335a98
+		sourceLineageTag: Bedside_Terminals
+		summarizeBy: none
+		sourceColumn: Bedside_Terminals
+
+		annotation SummarizationSetBy = Automatic
+
+	column Entlassmgmt_System
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f71b4a0b-5a93-4440-8b8a-4a0bc9303c49
+		sourceLineageTag: Entlassmgmt_System
+		summarizeBy: none
+		sourceColumn: Entlassmgmt_System
+
+		annotation SummarizationSetBy = Automatic
+
+	column Kommunikationsserver
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ebde1b7f-036e-4b37-bce0-bdbe4c0940d8
+		sourceLineageTag: Kommunikationsserver
+		summarizeBy: none
+		sourceColumn: Kommunikationsserver
+
+		annotation SummarizationSetBy = Automatic
+
+	column MDM-Lösung
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 8fdb1416-4410-4011-a891-e71865d5d671
+		sourceLineageTag: MDM-Lösung
+		summarizeBy: none
+		sourceColumn: MDM-Lösung
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mobilgeräte
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 15a2a069-1793-4751-b065-2dfbddfd137d
+		sourceLineageTag: Mobilgeräte
+		summarizeBy: none
+		sourceColumn: Mobilgeräte
+
+		annotation SummarizationSetBy = Automatic
+
+	column Patienten-Portal
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 4bd02555-f6af-451d-bb28-fea6a60d6f7e
+		sourceLineageTag: Patienten-Portal
+		summarizeBy: none
+		sourceColumn: Patienten-Portal
+
+		annotation SummarizationSetBy = Automatic
+
+	column SourceFile
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 09ac119f-83a7-4ed0-98d1-0acd3c2ae6e3
+		sourceLineageTag: SourceFile
+		summarizeBy: none
+		sourceColumn: SourceFile
+
+		annotation SummarizationSetBy = Automatic
+
+	column Branche
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b79f95e1-467b-490a-82cf-0524123fac97
+		sourceLineageTag: Branche
+		summarizeBy: none
+		sourceColumn: Branche
+
+		annotation SummarizationSetBy = Automatic
+
+	column Zuordnung
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 0f084d45-2ce0-4634-b631-5c333876d2de
+		sourceLineageTag: Zuordnung
+		summarizeBy: none
+		sourceColumn: Zuordnung
+
+		annotation SummarizationSetBy = Automatic
+
+	column Bundesland
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ae906a9c-703d-443b-b777-70cc2c811f9b
+		sourceLineageTag: Bundesland
+		summarizeBy: none
+		sourceColumn: Bundesland
+
+		annotation SummarizationSetBy = Automatic
+
+	partition g_geschaeftspartner = entity
+		mode: directLake
+		source
+			entityName: g_geschaeftspartner
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

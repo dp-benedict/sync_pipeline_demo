@@ -1,0 +1,62 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {},
+  "name": "Silver_Flow_Verlag2",
+  "queryGroups": [],
+  "documentLocale": "de-DE",
+  "queriesMetadata": {
+    "s_branchen2": {
+      "queryId": "7c241374-c8af-45fe-adff-a6a41628dad3",
+      "queryName": "s_branchen2",
+      "loadEnabled": false
+    },
+    "s_produkt_hierarchie2": {
+      "queryId": "458aa609-53cc-4b6e-a2ba-d1c59372f980",
+      "queryName": "s_produkt_hierarchie2",
+      "loadEnabled": false
+    },
+    "s_calendar2": {
+      "queryId": "906b5707-30f7-417d-927e-6dd28b17fe68",
+      "queryName": "s_calendar2",
+      "loadEnabled": false
+    },
+    "s_geschaeftspartner2": {
+      "queryId": "ffd1ae64-677a-43ee-979a-f1fdcf2623e6",
+      "queryName": "s_geschaeftspartner2",
+      "loadEnabled": false
+    },
+    "s_postleitzahlen2": {
+      "queryId": "9d7afaa8-5ad9-4f46-afc7-395d5a931582",
+      "queryName": "s_postleitzahlen2",
+      "loadEnabled": false
+    },
+    "s_heads2": {
+      "queryId": "495a11cc-fb47-4584-8a1d-5f9797c9a003",
+      "queryName": "s_heads2",
+      "loadEnabled": false
+    },
+    "s_items2": {
+      "queryId": "e9191f91-d860-415f-9054-d618290cbfe5",
+      "queryName": "s_items2",
+      "loadEnabled": false
+    },
+    "s_bildurls2": {
+      "queryId": "fd4ed905-aea5-4260-b5b0-3f821c58844a",
+      "queryName": "s_bildurls2",
+      "loadEnabled": false
+    },
+    "DefaultDestination": {
+      "queryId": "bd6407aa-494a-4c0c-b08c-4672c7a10a7e",
+      "queryName": "DefaultDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "Lakehouse",
+      "kind": "Lakehouse",
+      "connectionId": "{\"ClusterId\":\"5575a0f1-14ff-4821-b3fa-d2ce730d723e\",\"DatasourceId\":\"12c58ec2-b414-4bd0-a4ab-9bd71d7e051e\"}"
+    }
+  ]
+}

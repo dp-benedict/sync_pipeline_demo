@@ -1,0 +1,75 @@
+table s_produkt_hierarchie
+	lineageTag: 0e4a74f4-9252-49de-9e2c-a3b8353189f5
+	sourceLineageTag: [dbo].[s_produkt_hierarchie]
+
+	column Produkt_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 0e969322-e675-49a5-b7d8-3be421f82cce
+		sourceLineageTag: Produkt_ID
+		summarizeBy: none
+		sourceColumn: Produkt_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Produkt
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: df613756-6b69-469b-85ca-84e7cb5adabe
+		sourceLineageTag: Produkt
+		summarizeBy: none
+		sourceColumn: Produkt
+
+		annotation SummarizationSetBy = Automatic
+
+	column Kategorie
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 5b74f1c1-cccc-4fa4-8d58-6b67d92d04fc
+		sourceLineageTag: Kategorie
+		summarizeBy: none
+		sourceColumn: Kategorie
+
+		annotation SummarizationSetBy = Automatic
+
+	column Detail
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 3778a9e6-f189-4914-8812-de9420a42c62
+		sourceLineageTag: Detail
+		summarizeBy: none
+		sourceColumn: Detail
+
+		annotation SummarizationSetBy = Automatic
+
+	column SourceFile
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 9229e79f-acfc-450a-bbb8-53ff7db876a6
+		sourceLineageTag: SourceFile
+		summarizeBy: none
+		sourceColumn: SourceFile
+
+		annotation SummarizationSetBy = Automatic
+
+	column Reihenfolge
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: eb18f712-4fbd-4599-90a2-dd81f7c0f5d0
+		sourceLineageTag: Reihenfolge
+		summarizeBy: none
+		sourceColumn: Reihenfolge
+
+		annotation SummarizationSetBy = Automatic
+
+	partition s_produkt_hierarchie = entity
+		mode: directLake
+		source
+			entityName: s_produkt_hierarchie
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+
