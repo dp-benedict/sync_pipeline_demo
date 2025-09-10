@@ -2,6 +2,12 @@ table g_calendar
 	lineageTag: fddca9ec-72cd-4863-a011-88351238823e
 	sourceLineageTag: [dbo].[g_calendar]
 
+	measure 'DEMO KENNZAHL' = 1
+		formatString: 0
+		lineageTag: 6b744dc0-de61-44d8-8bb5-cd8932add6c3
+
+		changedProperty = Name
+
 	column Date
 		dataType: dateTime
 		formatString: General Date
