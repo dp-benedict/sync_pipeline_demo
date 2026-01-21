@@ -2,7 +2,7 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
     "type": "Dataflow",
-    "displayName": "Silver_Flow_Verlag2"
+    "displayName": "Silver_Flow_Verlag_CICD"
   },
   "config": {
     "version": "2.0",
