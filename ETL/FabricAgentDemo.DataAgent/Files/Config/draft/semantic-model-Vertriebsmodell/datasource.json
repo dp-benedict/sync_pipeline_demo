@@ -1,0 +1,588 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/dataAgent/definition/dataSource/1.0.0/schema.json",
+  "artifactId": "9ee1a24c-af5d-411f-acf4-2bba3fc6cf29",
+  "workspaceId": "8faed8c1-f61b-43a6-ad09-dce05a97c54a",
+  "dataSourceInstructions": null,
+  "displayName": "Vertriebsmodell",
+  "type": "semantic_model",
+  "userDescription": null,
+  "metadata": {},
+  "elements": [
+    {
+      "id": "d1fb066c-1fe3-4825-8a12-29138a2aff5c",
+      "is_selected": false,
+      "display_name": "Kunden",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "2f2423ea-3899-429a-9b59-39a28fef428c",
+          "is_selected": true,
+          "display_name": "Kunde",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "3833ebf1-6728-47a5-ba46-e9fb44a42611",
+          "is_selected": true,
+          "display_name": "Kontaktperson",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "4382913f-f35e-4101-a861-62e153d2b76f",
+          "is_selected": true,
+          "display_name": "Kontaktrolle",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "65ab0d1d-b545-4164-84d4-86e6076283ef",
+          "is_selected": true,
+          "display_name": "Telefon",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "df660b1c-95fe-4a5b-aa39-2a0ca022b046",
+          "is_selected": true,
+          "display_name": "Straße",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "d9747aad-f4f4-4673-bd7d-4c5520f9302e",
+          "is_selected": true,
+          "display_name": "PLZ",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "7cf7ac09-049d-4cf3-9ec7-7150b6747044",
+          "is_selected": true,
+          "display_name": "Stadt",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "caf65ddc-2d6c-4443-be01-6b8bb84d61ce",
+          "is_selected": true,
+          "display_name": "Land",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "33331082-3e72-4f16-a341-027ad41446a0",
+          "is_selected": true,
+          "display_name": "Kontinent",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "aee3c893-5298-4ebc-ad61-145f5c47a433",
+      "is_selected": false,
+      "display_name": "Mitarbeiter",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "8d5c2cbd-c476-4d09-9a7b-bdef2f40510b",
+          "is_selected": true,
+          "display_name": "Nachname",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "7dc39d17-79a1-4424-ae8f-cb040d50a775",
+          "is_selected": true,
+          "display_name": "Vorname",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "e4e88b6d-c4a7-46e4-be79-791d1913e724",
+          "is_selected": true,
+          "display_name": "Rolle",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "8122c814-87b5-437e-a08d-529c03794afa",
+          "is_selected": true,
+          "display_name": "Geburtstag",
+          "type": "semantic_model.column",
+          "data_type": "DateTime",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "b8f61dd9-1dc1-4593-839a-13a5251090df",
+          "is_selected": true,
+          "display_name": "Einstelldatum",
+          "type": "semantic_model.column",
+          "data_type": "DateTime",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "5a50b216-98ed-42a5-be33-460a4ce25e2b",
+          "is_selected": true,
+          "display_name": "Adresse",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "a0804ee6-4ab9-4da1-a296-0dda1b00c246",
+          "is_selected": true,
+          "display_name": "Stadt",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "fb47c0fe-e47d-44f0-b694-fb9ed36d3b16",
+          "is_selected": true,
+          "display_name": "Plz",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "fdb86f18-f23f-41a8-a8fb-83a7d4b020ca",
+          "is_selected": true,
+          "display_name": "Land",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "79b23881-7bc5-452f-864d-fe9ed765362b",
+          "is_selected": true,
+          "display_name": "Telefon",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "c77c31ed-0f83-47ab-ab18-a2f8979f63cc",
+          "is_selected": true,
+          "display_name": "Manager",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "c7596fe1-5637-4b82-9a6a-5cf13e885032",
+      "is_selected": false,
+      "display_name": "Aufträge",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "9c422694-a934-4ecb-8bdd-a7aed46b32a2",
+          "is_selected": true,
+          "display_name": "Bestell ID",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "b5e46266-fd44-44a4-8a0c-014873ddbb98",
+          "is_selected": true,
+          "display_name": "Produkt ID",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "6959f419-2a5e-4a5c-8efd-b3362b5b2617",
+          "is_selected": true,
+          "display_name": "Preis",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "2499a36c-de33-4e2b-8cf0-d41d74a9dece",
+          "is_selected": true,
+          "display_name": "Menge",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "ec8c61d3-706f-4df4-a494-745b7ee25dae",
+          "is_selected": true,
+          "display_name": "Rabatt",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "ec302339-3cce-44e5-9eab-94cd42e8ae07",
+          "is_selected": true,
+          "display_name": "Kunde",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "4cfc1815-36de-4e3a-974a-64e340902bd9",
+          "is_selected": true,
+          "display_name": "Verkäufer",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "a703d610-b57c-429f-bed4-a9152f9ef973",
+          "is_selected": true,
+          "display_name": "Wunschdatum",
+          "type": "semantic_model.column",
+          "data_type": "DateTime",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "3a38803e-f408-41b4-872f-b43fa301193b",
+          "is_selected": true,
+          "display_name": "Versendungsdatum",
+          "type": "semantic_model.column",
+          "data_type": "DateTime",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "9096facd-391e-4405-8776-7e54418ddcfb",
+          "is_selected": true,
+          "display_name": "Versandunternehmen",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "1556945d-7650-4f38-963d-e04d87c4acd7",
+          "is_selected": true,
+          "display_name": "Frachtkosten",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "853260bb-4971-4913-a5ff-c28094401d81",
+      "is_selected": false,
+      "display_name": "Produkte",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "7cd74c69-97a3-4632-baf4-2b50ff623877",
+          "is_selected": true,
+          "display_name": "Produkt",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "cde1b401-4fda-404d-bb5c-3b120da78433",
+          "is_selected": true,
+          "display_name": "Kosten pro Einheit",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "c66ffb4d-6ad8-4d45-be27-d7c6956e8ab3",
+          "is_selected": true,
+          "display_name": "Lieferant ID",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "5f03e9ea-c4a6-411a-9090-383ab2e3745c",
+          "is_selected": true,
+          "display_name": "Kategorie ID",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "439d4dc8-32dd-482c-b3ea-35a8ee7a8d38",
+          "is_selected": true,
+          "display_name": "Einheit",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "a1874a74-9f86-4af0-8543-bdfa8de013e5",
+          "is_selected": true,
+          "display_name": "Preis",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "d44ffa96-2796-4c29-9cc2-2b111771309b",
+          "is_selected": true,
+          "display_name": "Einheiten auf Lager",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "69bea229-a9f7-4ede-b1eb-1b7495f96ead",
+          "is_selected": true,
+          "display_name": "Bestellte Einheiten",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "fe522d7c-7047-432f-b445-e7b4c6b7789d",
+          "is_selected": true,
+          "display_name": "ReorderLevel",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "35d59cc0-97c9-43d2-adf0-c1b8b6f7b7ad",
+          "is_selected": true,
+          "display_name": "Eingestellt",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "26040693-7c69-476e-bf64-f9a6dec69fc0",
+          "is_selected": true,
+          "display_name": "Kategorie",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "19a41626-3034-4432-b301-9e4765aa3136",
+          "is_selected": true,
+          "display_name": "Beschreibung",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "2d17472c-d3d8-41d2-9859-c76516cba538",
+      "is_selected": false,
+      "display_name": "Datumstabelle",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "ddce7606-7a58-4bd2-b347-c10a50d0c5e0",
+          "is_selected": true,
+          "display_name": "Datum",
+          "type": "semantic_model.column",
+          "data_type": "DateTime",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "8ffa61e7-b1b9-4c5c-8ef6-050b2aaaf734",
+          "is_selected": true,
+          "display_name": "Jahr",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "35a6fceb-22e1-4ff2-aeb0-e07680a24eea",
+          "is_selected": true,
+          "display_name": "JahrQuartal",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "2c3af338-d1dd-46b5-899d-3debb41fa69e",
+          "is_selected": true,
+          "display_name": "Monat",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "34160c1b-39fc-410e-ada1-30abb8025d68",
+          "is_selected": true,
+          "display_name": "Monat#",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "c0c87556-6c8e-471a-a5cf-aaeb53bab65d",
+          "is_selected": true,
+          "display_name": "JahrMonat",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "4dcd6997-d143-4a18-84a2-97e300694bba",
+          "is_selected": true,
+          "display_name": "Wochentag",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "b5433661-d5a9-48b4-8c7e-93d094aa0b39",
+          "is_selected": true,
+          "display_name": "Wochentag#",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "b8a4a706-9ef9-46a9-9058-ac35a707d9e9",
+          "is_selected": true,
+          "display_name": "Quartal",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "f0bf08cc-f0ec-4ac8-82da-f49f0b3a9742",
+          "is_selected": true,
+          "display_name": "Kalenderwoche",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "a95c4378-0b46-49d8-9a98-68665d6ec25e",
+          "is_selected": true,
+          "display_name": "Flag_Zukunft",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "19283d5f-8b73-4e56-a891-1d1486cb44c3",
+      "is_selected": false,
+      "display_name": "Kennzahlen",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "444219f2-f6b5-4c2f-8e6a-e06270e50e34",
+          "is_selected": true,
+          "display_name": "Umsatz",
+          "type": "semantic_model.measure",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "6c945d0b-db5c-4b85-afad-d800aa683ec1",
+          "is_selected": true,
+          "display_name": "Umsatz PY",
+          "type": "semantic_model.measure",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "6f820f7c-73df-45c2-bb3b-082dc00ce626",
+          "is_selected": true,
+          "display_name": "Umsatz Δ % PY",
+          "type": "semantic_model.measure",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "41f2f151-3742-4c47-a5bb-74cd11a5ef40",
+          "is_selected": true,
+          "display_name": "Umsatz Δ PY",
+          "type": "semantic_model.measure",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        }
+      ]
+    }
+  ]
+}

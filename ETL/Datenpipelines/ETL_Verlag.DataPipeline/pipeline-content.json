@@ -1,0 +1,172 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "type": "RefreshDataflow",
+        "typeProperties": {
+          "dataflowId": "7ff35837-9234-4eea-971b-dc21cb577db9",
+          "workspaceId": "fc294c47-40b8-4573-a523-359c63157b56",
+          "notifyOption": "NoNotification"
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "Transformiere Silber Daten",
+        "dependsOn": [
+          {
+            "activity": "Importiere SharePoint Daten_copy1",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "RefreshDataflow",
+        "typeProperties": {
+          "dataflowId": "7761cc36-77fb-461e-9345-96d9d3eddcf0",
+          "workspaceId": "fc294c47-40b8-4573-a523-359c63157b56",
+          "notifyOption": "NoNotification"
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "Transformiere Gold Daten",
+        "dependsOn": [
+          {
+            "activity": "Transformiere Silber Daten",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "InvokePipeline",
+        "typeProperties": {
+          "parameters": {},
+          "waitOnCompletion": true,
+          "workspaceId": "00000000-0000-0000-0000-000000000000",
+          "pipelineId": "5505c8a2-e0fa-b1ba-46cd-863b83190de4",
+          "operationType": "InvokeFabricPipeline"
+        },
+        "externalReferences": {
+          "connection": "f68ba80b-3326-422c-ae9c-dd08b1c89c4f"
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "Kopiere Rohdaten",
+        "description": "Kopiert Rohdaten aus dem Lakehouse",
+        "dependsOn": []
+      },
+      {
+        "type": "RefreshDataflow",
+        "typeProperties": {
+          "dataflowId": "5219455c-dae6-4329-afaa-f262ef9283cb",
+          "workspaceId": "fc294c47-40b8-4573-a523-359c63157b56",
+          "notifyOption": "NoNotification"
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "Importiere SharePoint Daten_copy1",
+        "dependsOn": [
+          {
+            "activity": "Kopiere Rohdaten",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Teams",
+        "typeProperties": {
+          "inputs": {
+            "body": {
+              "recipient": {
+                "groupId": "54210ab6-a551-454f-bc24-1e2612690ebf",
+                "channelId": "19:e2RZyj_TP2eKDspkNPmgkj3NZRmUNDOAHdlqedTP2yE1@thread.tacv2"
+              },
+              "messageBody": "<p>@concat(pipeline().PipelineName, ' erfolgreich ausgeführt.')</p>",
+              "subject": "Erfolgreicher Pipelinedurchlauf"
+            },
+            "method": "post",
+            "path": "/beta/teams/conversation/message/poster/User/location/Channel"
+          }
+        },
+        "name": "Success-Message",
+        "description": "Sendet eine Nachricht bei erfolgreichem durchlaufen einer Aktivität",
+        "dependsOn": [
+          {
+            "activity": "Transformiere Gold Daten",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Teams",
+        "typeProperties": {
+          "inputs": {
+            "body": {
+              "recipient": {
+                "groupId": "54210ab6-a551-454f-bc24-1e2612690ebf",
+                "channelId": "19:e2RZyj_TP2eKDspkNPmgkj3NZRmUNDOAHdlqedTP2yE1@thread.tacv2"
+              },
+              "messageBody": "<p>Fehler bei Ausführung der Pipeline: @pipeline().PipelineName&nbsp;</p>"
+            },
+            "method": "post",
+            "path": "/beta/teams/conversation/message/poster/User/location/Channel"
+          }
+        },
+        "name": "Error-Message",
+        "description": "Sendet eine Nachricht bei scheitern einer Aktivität",
+        "dependsOn": [
+          {
+            "activity": "Kopiere Rohdaten",
+            "dependencyConditions": [
+              "Failed"
+            ]
+          },
+          {
+            "activity": "Importiere SharePoint Daten_copy1",
+            "dependencyConditions": [
+              "Failed"
+            ]
+          },
+          {
+            "activity": "Transformiere Silber Daten",
+            "dependencyConditions": [
+              "Failed"
+            ]
+          },
+          {
+            "activity": "Transformiere Gold Daten",
+            "dependencyConditions": [
+              "Failed"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

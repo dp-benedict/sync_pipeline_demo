@@ -1,0 +1,158 @@
+table s_postleitzahlen2
+	lineageTag: 106424fd-a47f-4556-9138-2d4029d8d682
+	sourceLineageTag: [dbo].[s_postleitzahlen2]
+
+	column 'Source.Name'
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 4e55b4cc-2715-4d3f-96f5-33caf5ae5b36
+		sourceLineageTag: Source.Name
+		summarizeBy: none
+		sourceColumn: Source.Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ländercode
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 9bca33b6-4647-4e68-982f-b801447e5dc3
+		sourceLineageTag: Ländercode
+		summarizeBy: none
+		sourceColumn: Ländercode
+
+		annotation SummarizationSetBy = Automatic
+
+	column Postleitzahl
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 9b32646d-1374-4c53-87cc-014c175bdafe
+		sourceLineageTag: Postleitzahl
+		summarizeBy: none
+		sourceColumn: Postleitzahl
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ort
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 1bc1f2a4-cb9e-46b1-bfc3-3b74c35f9494
+		sourceLineageTag: Ort
+		summarizeBy: none
+		sourceColumn: Ort
+
+		annotation SummarizationSetBy = Automatic
+
+	column Bundesland
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 128e2748-7694-4966-b083-209daa7d443e
+		sourceLineageTag: Bundesland
+		summarizeBy: none
+		sourceColumn: Bundesland
+
+		annotation SummarizationSetBy = Automatic
+
+	column admin_code1
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 166c0548-ade9-4ef2-baa8-6a82105f33c2
+		sourceLineageTag: admin_code1
+		summarizeBy: none
+		sourceColumn: admin_code1
+
+		annotation SummarizationSetBy = Automatic
+
+	column admin_name2
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 0e6cf9c0-7906-456a-992c-805325d9ae83
+		sourceLineageTag: admin_name2
+		summarizeBy: none
+		sourceColumn: admin_name2
+
+		annotation SummarizationSetBy = Automatic
+
+	column admin_code2
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: affe0ac6-1efe-409a-8f04-4955fd970a4f
+		sourceLineageTag: admin_code2
+		summarizeBy: none
+		sourceColumn: admin_code2
+
+		annotation SummarizationSetBy = Automatic
+
+	column admin_name3
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 5a4aa95d-8fcc-4194-ac2e-d7c66818deb2
+		sourceLineageTag: admin_name3
+		summarizeBy: none
+		sourceColumn: admin_name3
+
+		annotation SummarizationSetBy = Automatic
+
+	column admin_code3
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 07823c79-36c8-40de-9332-cbcde44b589f
+		sourceLineageTag: admin_code3
+		summarizeBy: none
+		sourceColumn: admin_code3
+
+		annotation SummarizationSetBy = Automatic
+
+	column Breitengrad
+		dataType: double
+		sourceProviderType: float
+		lineageTag: dd77cc44-fb14-4879-aaa3-72659654220d
+		sourceLineageTag: Breitengrad
+		summarizeBy: sum
+		sourceColumn: Breitengrad
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Laengengrad
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 6a6a262b-5178-45a8-96b1-4a7cc0e114ee
+		sourceLineageTag: Laengengrad
+		summarizeBy: sum
+		sourceColumn: Laengengrad
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column accuracy
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: fc40297d-379b-42b9-867b-911a41b9f4ab
+		sourceLineageTag: accuracy
+		summarizeBy: sum
+		sourceColumn: accuracy
+
+		annotation SummarizationSetBy = Automatic
+
+	column Koordinaten
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 78103b8d-3eea-4888-ae3b-228bf9d23885
+		sourceLineageTag: Koordinaten
+		summarizeBy: none
+		sourceColumn: Koordinaten
+
+		annotation SummarizationSetBy = Automatic
+
+	partition s_postleitzahlen2-391661d4-660e-464e-b051-0c5281eed0ad = entity
+		mode: directLake
+		source
+			entityName: s_postleitzahlen2
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation IsTableInBiModel = True
+

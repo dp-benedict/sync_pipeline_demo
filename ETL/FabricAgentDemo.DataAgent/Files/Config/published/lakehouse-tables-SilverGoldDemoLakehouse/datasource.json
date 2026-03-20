@@ -1,0 +1,4143 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/dataAgent/definition/dataSource/1.0.0/schema.json",
+  "artifactId": "8cee006a-a1cf-9980-4d42-7f3a4d3a0e18",
+  "workspaceId": "00000000-0000-0000-0000-000000000000",
+  "dataSourceInstructions": null,
+  "displayName": "SilverGoldDemoLakehouse",
+  "type": "lakehouse_tables",
+  "userDescription": null,
+  "metadata": {},
+  "elements": [
+    {
+      "id": "30859f4b-09bd-4d73-8806-018a80e706a3",
+      "is_selected": false,
+      "display_name": "dbo",
+      "type": "lakehouse_tables.schema",
+      "description": null,
+      "children": [
+        {
+          "id": "fa2b74c0-3f3b-4c5f-9c30-983e1d0891ba",
+          "is_selected": false,
+          "display_name": "g_calendar",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "59d7670e-6109-451d-baf1-3b85967a2408",
+              "is_selected": true,
+              "display_name": "CurFiscalYearOffset",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "6e292320-dc30-4f02-a3cc-044a52fae61c",
+              "is_selected": true,
+              "display_name": "CurMonthOffset",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "95400c86-e257-4dbe-8000-655c5a2cbdec",
+              "is_selected": true,
+              "display_name": "CurQuarterOffset",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "d1287a54-ea99-4cd5-a117-0b189c5ac5be",
+              "is_selected": true,
+              "display_name": "CurrentDayOffset",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "9fc63fc6-8126-4f68-b3fb-2dc35f200e6f",
+              "is_selected": true,
+              "display_name": "CurWeekOffset",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "392dbb77-6708-42bc-a6ab-908ce2fec767",
+              "is_selected": true,
+              "display_name": "CurYearOffset",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "fe2d94ca-e6ba-4d54-a440-1a0534a7ec12",
+              "is_selected": true,
+              "display_name": "Date",
+              "type": "lakehouse_tables.column",
+              "data_type": "date",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "ea9942d4-9673-4d99-b74f-06a1112da0bd",
+              "is_selected": true,
+              "display_name": "Day_of_Year",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "777626e8-49f2-4f6b-8692-417815abbb74",
+              "is_selected": true,
+              "display_name": "FiscalMonth",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "84a89a05-189a-497d-ba7d-7a6823c1c15d",
+              "is_selected": true,
+              "display_name": "FiscalMonthLong",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b100bf4b-ab10-4806-ac5d-6468faf6c958",
+              "is_selected": true,
+              "display_name": "FiscalMonthNum",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "0a162a38-5947-487b-ac40-7a0b54a94fed",
+              "is_selected": true,
+              "display_name": "FiscalQuarter",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "d7e12ad0-a56f-4f8a-8ac7-684eac8f2fab",
+              "is_selected": true,
+              "display_name": "FiscalYear",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "69a98afc-6ecc-49dd-b3d9-602eaba41f7a",
+              "is_selected": true,
+              "display_name": "Flag_MTD",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "f201c937-670f-4b16-880c-ad2dc6e8cc51",
+              "is_selected": true,
+              "display_name": "Flag_QTD",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "da144ef9-87db-4178-87a9-528a9787d3b1",
+              "is_selected": true,
+              "display_name": "Flag_YTD",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "5a2740f3-5e55-428f-b892-f4d7c10ffce8",
+              "is_selected": true,
+              "display_name": "FutureDate",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "750b7674-c374-4967-8449-3336b5adbe58",
+              "is_selected": true,
+              "display_name": "Month",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "2e772ef5-987e-4490-a743-46ba5397c450",
+              "is_selected": true,
+              "display_name": "MonthLong",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "f120af3d-75d7-42c0-9551-1477de698fd7",
+              "is_selected": true,
+              "display_name": "MonthNum",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "e84f0147-73e2-43f7-af1c-f84165dd9c26",
+              "is_selected": true,
+              "display_name": "MonthYear",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "302a93d7-7b81-4cfe-a836-0bee8346d3c6",
+              "is_selected": true,
+              "display_name": "MonthYearLong",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "edc7f9ce-f2cc-4795-938c-975aa0f1b8fc",
+              "is_selected": true,
+              "display_name": "MonthYearNum",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "8800f036-d9e9-4598-bf84-d46fc3c63235",
+              "is_selected": true,
+              "display_name": "Quarter",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "f3e6b158-b5b8-4faf-bd44-e59f10578253",
+              "is_selected": true,
+              "display_name": "Week_of_Year",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "28a46666-8dec-4d76-9168-a64d35442289",
+              "is_selected": true,
+              "display_name": "WeekDate",
+              "type": "lakehouse_tables.column",
+              "data_type": "date",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "513282cb-de5c-4228-8446-a3602b6e5275",
+              "is_selected": true,
+              "display_name": "Weekday",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "59507c55-6566-4381-99b4-d78e37763ebb",
+              "is_selected": true,
+              "display_name": "WeekdayNum",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "0697c7c7-6a46-489b-80ef-b8ff2e86ef46",
+              "is_selected": true,
+              "display_name": "WeekdayWeekend",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "e550a6f5-e132-4797-aba1-e7eb2e9adb64",
+              "is_selected": true,
+              "display_name": "WeekSequenceNum",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "a779fda1-0d00-414d-a18f-f08fb77098ea",
+              "is_selected": true,
+              "display_name": "Year",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "c7b6074d-ada2-4b27-966d-62e8704224a1",
+              "is_selected": true,
+              "display_name": "ZukunftFake",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "5aeedbaa-faf0-4dd3-996b-c1d6ca3bf14a",
+          "is_selected": false,
+          "display_name": "g_geschaeftspartner",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "5e706796-7cbb-4eb4-9ce9-423af3c85fd7",
+              "is_selected": true,
+              "display_name": "ABC_Klassifizierung",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "bec6c570-7001-411b-9798-64e7a364e30e",
+              "is_selected": true,
+              "display_name": "AirPrint_Drucker",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "9ea7f8d0-8181-4285-a226-28a405ddeff0",
+              "is_selected": true,
+              "display_name": "Anzahl_Ärzte",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "e86cd5fd-49d1-4514-a168-4d00ad10acb3",
+              "is_selected": true,
+              "display_name": "Anzahl_Betten",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b3622b5e-cb7a-4e8c-a0fd-82f25846e000",
+              "is_selected": true,
+              "display_name": "Anzahl_EDP_Dok.",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "3bcc539a-a9a5-4df5-98fb-fd67874c8098",
+              "is_selected": true,
+              "display_name": "Bedside_Terminals",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "a74154ab-99ba-45a4-ae63-c159bfda7021",
+              "is_selected": true,
+              "display_name": "Betreuung",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "44399500-490b-406f-928a-581dafe3cd12",
+              "is_selected": true,
+              "display_name": "Branche",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "d84e4c79-a370-4078-8866-13c8c5dd71dc",
+              "is_selected": true,
+              "display_name": "Branchencode",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "1bd6c086-4f6c-4a60-b9f6-ecee9fd4e09a",
+              "is_selected": true,
+              "display_name": "Browser",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b9f16f66-adf2-4e09-ba3e-40f8b7b59d3f",
+              "is_selected": true,
+              "display_name": "Bundesland",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "9a6cf0b0-0668-4eda-aa07-59cac4ab09f2",
+              "is_selected": true,
+              "display_name": "Clientplattform",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "9eeec2b4-c9f9-46ef-9914-90899d96cc83",
+              "is_selected": true,
+              "display_name": "Datenbank",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "1668a028-ca00-4134-892e-290aff0f2a85",
+              "is_selected": true,
+              "display_name": "E-Mail",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "981dd3cb-423e-4c61-b49a-c5cd37928fb0",
+              "is_selected": true,
+              "display_name": "ECP",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "ca90f33b-47c0-46f4-bfae-b91c7090b46f",
+              "is_selected": true,
+              "display_name": "Entlassmgmt_System",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "9607bccc-1c78-4ed4-8253-2ac9decc42b9",
+              "is_selected": true,
+              "display_name": "Fallzahl",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "ae66a5c5-1736-4c29-9a8d-54cc2a438e6b",
+              "is_selected": true,
+              "display_name": "Geschäftspartner_ID",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "54085333-87ad-4da6-8a47-68d2658861f1",
+              "is_selected": true,
+              "display_name": "Hausnummer",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "c7f3072e-adb5-4746-b9da-ed532700a2fb",
+              "is_selected": true,
+              "display_name": "Infrastruktur",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "843d9efa-d95f-4f6c-8dfc-81854b255e44",
+              "is_selected": true,
+              "display_name": "JAVA",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "a01db2f1-472a-4adb-a20e-4130bf733f70",
+              "is_selected": true,
+              "display_name": "KIS/AIS/PVS",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "fc6799db-11d8-4596-9806-3180ddfd1e81",
+              "is_selected": true,
+              "display_name": "Kommunikationsserver",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "40db1f96-69b7-4608-a670-ebb09c6e3ec6",
+              "is_selected": true,
+              "display_name": "Ländercode",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "529814e4-01e9-408d-9b8c-0305eaadaf62",
+              "is_selected": true,
+              "display_name": "Lizenzsequenz",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "7ec4d880-3ea2-489e-b9c6-de1a16e3f7ff",
+              "is_selected": true,
+              "display_name": "MDM-Lösung",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "c3e6d2d5-99d9-4392-9003-8196f73e4258",
+              "is_selected": true,
+              "display_name": "Mobilgeräte",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "4cfa6411-d15a-4441-b878-6446ed60eba8",
+              "is_selected": true,
+              "display_name": "Mobiltelefon",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "9eab061c-8723-470e-9fab-57ae23c265cd",
+              "is_selected": true,
+              "display_name": "Name_1",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b91629d2-6446-4e39-8530-06e3fad87b61",
+              "is_selected": true,
+              "display_name": "Name_2",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "88b8a64d-956b-48ee-9264-715a68be1642",
+              "is_selected": true,
+              "display_name": "Name_3",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "1a2834ae-d16b-40fc-a59b-4f98c146f257",
+              "is_selected": true,
+              "display_name": "Name_4",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "bf3e7f9e-8cb4-4b58-ad9b-ed63221cd824",
+              "is_selected": true,
+              "display_name": "Offline",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "9fdb21e7-b0cf-4501-8551-4fd6a888a997",
+              "is_selected": true,
+              "display_name": "Ort",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "f40e44a7-231f-4553-9e1e-fa6ef5ba7c81",
+              "is_selected": true,
+              "display_name": "Patienten-Portal",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "cec71faf-ed2e-485c-a97f-ddebaf5a7e26",
+              "is_selected": true,
+              "display_name": "Plz._Postfach",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b65f54dd-76c3-40bd-a363-d2afc1b90bd7",
+              "is_selected": true,
+              "display_name": "Portalkunde",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "2e259539-3b82-4af4-88c3-29a144e11fa1",
+              "is_selected": true,
+              "display_name": "Postfach",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "4033ecf9-8761-472f-898a-1b3af532ca76",
+              "is_selected": true,
+              "display_name": "Postleitzahl",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "bb7866a9-b4f4-4c79-aa5f-9a2720060ef3",
+              "is_selected": true,
+              "display_name": "Referenzkunde",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "2da35c76-67fe-4720-a94a-e6a7a9ce7307",
+              "is_selected": true,
+              "display_name": "Schnittstellentechnologie",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "75c671fb-f568-4d08-8c81-008cffb8a085",
+              "is_selected": true,
+              "display_name": "Server",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "f133b375-6ef8-45bb-a9ff-61837fd69afc",
+              "is_selected": true,
+              "display_name": "SourceFile",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b06e462c-6d60-4cad-b481-14c45074e2a5",
+              "is_selected": true,
+              "display_name": "Straße",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "1b99571a-2645-4ac3-b37c-20340a8e8ad2",
+              "is_selected": true,
+              "display_name": "Telefon",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b97c4632-98e9-4f4d-8a0e-7fab0c4375db",
+              "is_selected": true,
+              "display_name": "Werbesperre_Fax",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "8ff23597-5eaf-47d8-9a40-e053fb37ac8f",
+              "is_selected": true,
+              "display_name": "Werbesperre_Mail",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "243693fc-2868-4991-b320-e2dde996dc6e",
+              "is_selected": true,
+              "display_name": "Werbesperre_Post",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "c14184b1-ec50-401f-9334-df0d412f00f4",
+              "is_selected": true,
+              "display_name": "Werbesperre_Telefon",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "160e2036-ae99-42db-bf98-e5f59a1555c0",
+              "is_selected": true,
+              "display_name": "WLAN",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "f019c904-2052-4ecc-b744-f9c3f71bf6dd",
+              "is_selected": true,
+              "display_name": "Zuordnung",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "a8705178-613d-4f6f-b6bb-e04b9fa09957",
+          "is_selected": false,
+          "display_name": "s_bildurls",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "00a01804-2764-47b6-9647-0450a5ab8460",
+              "is_selected": true,
+              "display_name": "Bild",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "f85b3336-3747-4b91-9ac9-801d88622605",
+              "is_selected": true,
+              "display_name": "Bild-URL",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "a75307c0-3626-45a7-b4cb-80369b87b6c4",
+              "is_selected": true,
+              "display_name": "BildURLS.xlsx",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "f4786345-5d33-4350-b9d5-c0d3c8c7835c",
+          "is_selected": false,
+          "display_name": "s_bildurls2",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "322eba9c-26b0-4685-8210-a57b3c924e45",
+              "is_selected": true,
+              "display_name": "Bild",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "e8573430-a1b8-4048-a23b-03e094f57014",
+              "is_selected": true,
+              "display_name": "Bild-URL",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b268c2e9-cc58-4b07-9024-471bd9b5311c",
+              "is_selected": true,
+              "display_name": "BildURLS.xlsx",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "ec80cc26-e04c-426c-aaf7-457e22642757",
+          "is_selected": false,
+          "display_name": "s_branchen",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "8955f2ff-2225-4cf2-9d7f-5b347741fc7d",
+              "is_selected": true,
+              "display_name": "Branche",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "80ec1fc2-4629-46d5-a08a-2fc23a3b8141",
+              "is_selected": true,
+              "display_name": "BranchenId",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "9918ea0d-93e0-479e-96ca-25ac94a73fdf",
+              "is_selected": true,
+              "display_name": "SourceFile",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "c7696dbd-a1e3-44bb-a2b4-27e691295490",
+              "is_selected": true,
+              "display_name": "Zuordnung",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "ac236a1f-1e61-4166-8b03-ece53f47c656",
+          "is_selected": false,
+          "display_name": "s_branchen2",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "a479364c-1271-4e10-bc43-e2f7fbac8200",
+              "is_selected": true,
+              "display_name": "Branche",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "ed0ee295-5f03-4d73-a057-6b895c8c4337",
+              "is_selected": true,
+              "display_name": "BranchenId",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "a9e5fb2c-d879-43a5-9fa5-34af30eb8035",
+              "is_selected": true,
+              "display_name": "SourceFile",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "f7935990-0385-4888-8b9a-9dd668a61283",
+              "is_selected": true,
+              "display_name": "Zuordnung",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "003ed216-94f4-4f8d-bdcb-8a4b517a56f0",
+          "is_selected": false,
+          "display_name": "s_calendar",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "5f79dcec-2126-4003-b8bb-e67c06ab40da",
+              "is_selected": true,
+              "display_name": "CurFiscalYearOffset",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "8e42596e-3004-40dc-a2ff-12535b647a3d",
+              "is_selected": true,
+              "display_name": "CurMonthOffset",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "e6424e15-5e6f-4a88-bf4e-5ab039a5bc4f",
+              "is_selected": true,
+              "display_name": "CurQuarterOffset",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "ec001691-7b90-4127-9d86-d75b8d859d6e",
+              "is_selected": true,
+              "display_name": "CurrentDayOffset",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "3fb5898d-b860-4de1-a23a-abaa7a2185c6",
+              "is_selected": true,
+              "display_name": "CurWeekOffset",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "7bd39603-b5e0-4166-8494-c161b106a424",
+              "is_selected": true,
+              "display_name": "CurYearOffset",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "f9b41b46-5d2a-4672-9f4d-059e9be32b8e",
+              "is_selected": true,
+              "display_name": "Date",
+              "type": "lakehouse_tables.column",
+              "data_type": "date",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "7c95b045-793a-4a0a-afa9-bbdb5bbd974f",
+              "is_selected": true,
+              "display_name": "Day_of_Year",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "09d29e96-44a9-4834-ba12-91453e7dcf09",
+              "is_selected": true,
+              "display_name": "FiscalMonth",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "20a50c40-1e8a-454f-9fbf-890eb2b28138",
+              "is_selected": true,
+              "display_name": "FiscalMonthLong",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "6a9ad2fa-4297-4fd2-ba04-16e4f01a6410",
+              "is_selected": true,
+              "display_name": "FiscalMonthNum",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "12df1408-7183-409d-a30b-738337bfed97",
+              "is_selected": true,
+              "display_name": "FiscalQuarter",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "0139d9ca-22f9-42c7-8525-2502573861bf",
+              "is_selected": true,
+              "display_name": "FiscalYear",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "240f08e7-cfaf-4db0-82c3-7ff8885bfa2a",
+              "is_selected": true,
+              "display_name": "Flag_MTD",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b3a6d52c-cd66-4929-a53c-e65b77e4c006",
+              "is_selected": true,
+              "display_name": "Flag_QTD",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "6a11eed2-ad9c-4564-bab0-51e44b91a12c",
+              "is_selected": true,
+              "display_name": "Flag_YTD",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "c8f56e6e-6e85-4020-a89c-5f22ae2126e7",
+              "is_selected": true,
+              "display_name": "FutureDate",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "a13413bd-de95-41b8-89a5-9026a1b2e5f2",
+              "is_selected": true,
+              "display_name": "Month",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "40075b57-f3f0-4193-a133-8d810f3d7a6f",
+              "is_selected": true,
+              "display_name": "MonthLong",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b0cfd327-1e88-4347-9e73-03f4e57dedac",
+              "is_selected": true,
+              "display_name": "MonthNum",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "3a6bc602-dec6-4b4e-9247-71551334f789",
+              "is_selected": true,
+              "display_name": "MonthYear",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "acc81034-dda4-45bc-a16a-a3675d3e1aba",
+              "is_selected": true,
+              "display_name": "MonthYearLong",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "86636e74-183c-41b7-b4ac-ffba42fc6989",
+              "is_selected": true,
+              "display_name": "MonthYearNum",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "1c2d4ba0-73b0-4e80-97a3-40533ae49a4b",
+              "is_selected": true,
+              "display_name": "Quarter",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "324550fa-3ad6-437d-9636-962b38770cd5",
+              "is_selected": true,
+              "display_name": "Week_of_Year",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "df0c4edf-a3a6-4421-aa54-9fcc489657e6",
+              "is_selected": true,
+              "display_name": "WeekDate",
+              "type": "lakehouse_tables.column",
+              "data_type": "date",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "aa409c6e-f29c-4bf0-9e86-ce45e3dda67f",
+              "is_selected": true,
+              "display_name": "Weekday",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "80565717-ff7a-40a1-8183-e005533b7de3",
+              "is_selected": true,
+              "display_name": "WeekdayNum",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "abf30dd9-b9a8-41d7-80ab-f181418e699a",
+              "is_selected": true,
+              "display_name": "WeekdayWeekend",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "0af1cb00-eaa4-4c52-ae94-aa1d70cdb3fb",
+              "is_selected": true,
+              "display_name": "WeekSequenceNum",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "c1034233-de44-40ef-8b2d-70f76e9e5b92",
+              "is_selected": true,
+              "display_name": "Year",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "2b3148f2-507a-464c-826a-d654aa50c14b",
+          "is_selected": false,
+          "display_name": "s_calendar2",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "afc246c7-0c80-40e5-b76d-34ea21993911",
+              "is_selected": true,
+              "display_name": "CurFiscalYearOffset",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "f3bf7ffa-00d2-4bb4-bfa3-58d937ec045a",
+              "is_selected": true,
+              "display_name": "CurMonthOffset",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "ce8cf6cd-31c0-43b1-9e3f-ae0fefd107c9",
+              "is_selected": true,
+              "display_name": "CurQuarterOffset",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "619ddc65-4dec-4c9a-bf42-64fb7d138630",
+              "is_selected": true,
+              "display_name": "CurrentDayOffset",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "d6121343-4622-47dd-b8e0-a097d9754e38",
+              "is_selected": true,
+              "display_name": "CurWeekOffset",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "3d267192-7388-4eca-a462-a7937b630f9e",
+              "is_selected": true,
+              "display_name": "CurYearOffset",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "25c6f41a-e1c7-4841-81a9-7ba97f039ef2",
+              "is_selected": true,
+              "display_name": "Date",
+              "type": "lakehouse_tables.column",
+              "data_type": "date",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "2d7d801c-839e-4822-85ef-2c245383e880",
+              "is_selected": true,
+              "display_name": "Day of Year",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "0b5298ea-16b9-46cc-8247-0403d67901f6",
+              "is_selected": true,
+              "display_name": "FiscalMonth",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "4ee9774b-f7c0-4202-bd3a-535f858a011e",
+              "is_selected": true,
+              "display_name": "FiscalMonthLong",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "6360235d-8392-445e-ae17-c3c6d08dfd35",
+              "is_selected": true,
+              "display_name": "FiscalMonthNum",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "05bf3661-af4d-420c-bd6d-d7ac4e209d45",
+              "is_selected": true,
+              "display_name": "FiscalQuarter",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "3cb2dfec-a421-4e9c-a39f-ee124861a0c0",
+              "is_selected": true,
+              "display_name": "FiscalYear",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "0f2c6914-b1b6-4511-a744-6fbb7478f121",
+              "is_selected": true,
+              "display_name": "Flag_MTD",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "d528a2ac-0986-4323-8915-9542b1f339f4",
+              "is_selected": true,
+              "display_name": "Flag_QTD",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "68f55a3d-6aa4-466a-8321-59863ab6b732",
+              "is_selected": true,
+              "display_name": "Flag_YTD",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "d3ec605f-81fa-4bfc-9983-f264aec4756f",
+              "is_selected": true,
+              "display_name": "FutureDate",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "4e78a1fa-16ea-46c0-a144-d616eb6c9e46",
+              "is_selected": true,
+              "display_name": "Month",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "e1c58900-d36c-4241-82bf-2d3ff17c8395",
+              "is_selected": true,
+              "display_name": "MonthLong",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "4a1f4945-6147-4b59-8aa5-c3d19e18f7cd",
+              "is_selected": true,
+              "display_name": "MonthNum",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "c15d6a51-76a2-4dff-bca9-d1cce4a59c27",
+              "is_selected": true,
+              "display_name": "MonthYear",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "9d4a2816-95a5-46bf-804c-2a1d04d5b3c2",
+              "is_selected": true,
+              "display_name": "MonthYearLong",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "7aac19a3-7c74-4c62-bcca-ba2576d9a12c",
+              "is_selected": true,
+              "display_name": "MonthYearNum",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "f7d2360a-1677-4614-b07e-4dd61201d469",
+              "is_selected": true,
+              "display_name": "Quarter",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "3a50c925-6485-4344-9fc4-82e5625a6aa1",
+              "is_selected": true,
+              "display_name": "Week of Year",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "adbf152f-fa5e-4a06-9797-b5d6ab0da21a",
+              "is_selected": true,
+              "display_name": "WeekDate",
+              "type": "lakehouse_tables.column",
+              "data_type": "date",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "fbacb1e9-04fa-447c-ad25-aa11bc9d908a",
+              "is_selected": true,
+              "display_name": "Weekday",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "3cc27ce2-eb9b-44cf-a7dd-fade441abda4",
+              "is_selected": true,
+              "display_name": "WeekdayNum",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "37160190-22c0-47bd-8e29-ba2af6b5ccac",
+              "is_selected": true,
+              "display_name": "WeekdayWeekend",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "943b6615-2466-45ae-8c5e-b90a738720bf",
+              "is_selected": true,
+              "display_name": "WeekSequenceNum",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "1af2f852-bc6a-43df-9247-6c0ea72a2d76",
+              "is_selected": true,
+              "display_name": "Year",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "e0501d38-0472-4382-94ca-0fbcd40bbba0",
+          "is_selected": true,
+          "display_name": "s_del2_clubs",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "fbe85dfc-65f6-4e47-b60e-c7c3cf770c1f",
+              "is_selected": true,
+              "display_name": "club",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "8174ffdc-934c-4d36-a245-2314e4657c62",
+              "is_selected": true,
+              "display_name": "club_id",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "839f3a12-4a2d-4737-934f-f3f8d0491f78",
+          "is_selected": false,
+          "display_name": "s_geschaeftspartner",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "edc9f7da-6525-41de-8f53-fbe40d9000ab",
+              "is_selected": true,
+              "display_name": "ABC_Klassifizierung",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "3bad9b98-20e8-460b-a7a3-1e061f36b8b6",
+              "is_selected": true,
+              "display_name": "AirPrint_Drucker",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "96eeb55e-962a-4f0c-90d8-7dc613e02d09",
+              "is_selected": true,
+              "display_name": "Anzahl_Ärzte",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b38bb7bb-0d82-46f0-8af1-6e4ee632230d",
+              "is_selected": true,
+              "display_name": "Anzahl_Betten",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "dc5e3df4-a543-41bf-bdb0-e3e2d7381694",
+              "is_selected": true,
+              "display_name": "Anzahl_EDP_Dok.",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "bd51801f-9d8d-483e-a046-d26f713d534e",
+              "is_selected": true,
+              "display_name": "Bedside_Terminals",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "fcde0623-a596-49a9-89c0-2993510b7235",
+              "is_selected": true,
+              "display_name": "Betreuung",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "cc3d80a5-88ce-41b9-82b1-5944f668ef98",
+              "is_selected": true,
+              "display_name": "Branchencode",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "5341df80-abad-4f3e-8b20-ec8040939812",
+              "is_selected": true,
+              "display_name": "Browser",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "fd8b9860-5345-4923-a86c-7e3860d77c68",
+              "is_selected": true,
+              "display_name": "Clientplattform",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "64897336-c2c1-41f1-b2c5-d19dfb9869bd",
+              "is_selected": true,
+              "display_name": "Datenbank",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "d41e568b-1cce-44ac-9a32-d6797ad9ad84",
+              "is_selected": true,
+              "display_name": "E-Mail",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "dfe6fa18-764b-4b3a-ad73-8addaecb2c40",
+              "is_selected": true,
+              "display_name": "ECP",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "952691ae-d11a-4898-bbf5-9bb3b06642d3",
+              "is_selected": true,
+              "display_name": "Entlassmgmt_System",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "c3c5ec75-fbea-440a-a6e9-14f6dd0eb303",
+              "is_selected": true,
+              "display_name": "Fallzahl",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "143e5e55-2daf-4861-9df4-60797950cf6e",
+              "is_selected": true,
+              "display_name": "Geschäftspartner_ID",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "6a5c8e90-808d-400b-b7f0-0f7537a2f9be",
+              "is_selected": true,
+              "display_name": "Hausnummer",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "46be2356-2a69-4a1b-8626-bfc6116b6a6c",
+              "is_selected": true,
+              "display_name": "Infrastruktur",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "bd627748-3c48-4b6c-af9b-6ceb87b22972",
+              "is_selected": true,
+              "display_name": "JAVA",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "f286d5f4-3c4b-48f5-9ec7-6602a9bb7bfa",
+              "is_selected": true,
+              "display_name": "KIS/AIS/PVS",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "2f84f45e-a6f2-46e5-9fa4-969ce62649cf",
+              "is_selected": true,
+              "display_name": "Kommunikationsserver",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b4761e3c-3052-4253-8386-96173b165ae9",
+              "is_selected": true,
+              "display_name": "Ländercode",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b1431e70-0b0f-4ceb-91e4-d260edb72f85",
+              "is_selected": true,
+              "display_name": "Lizenzsequenz",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b67bb4f0-c347-41cc-a538-8b4116aae68b",
+              "is_selected": true,
+              "display_name": "MDM-Lösung",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "99de1238-6e8a-4778-8f07-2de43922f540",
+              "is_selected": true,
+              "display_name": "Mobilgeräte",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "0c654fa7-f493-468c-99d3-c7369698d227",
+              "is_selected": true,
+              "display_name": "Mobiltelefon",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "404da36b-7be6-453a-9356-006c7d915811",
+              "is_selected": true,
+              "display_name": "Name_1",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "bba04b70-4c1e-48fc-8939-1e45ba3382ab",
+              "is_selected": true,
+              "display_name": "Name_2",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "284ce009-629d-4a2b-bd35-1daacf69fc1d",
+              "is_selected": true,
+              "display_name": "Name_3",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "32636ac1-6490-45e4-b2f8-7a768a5e335d",
+              "is_selected": true,
+              "display_name": "Name_4",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "04908040-0faa-43b7-ada1-8ba5acb3f6ed",
+              "is_selected": true,
+              "display_name": "Offline",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "e66223a0-240b-40ca-b9ec-c71e41ed84c1",
+              "is_selected": true,
+              "display_name": "Ort",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "189a73d9-2f80-4db1-b924-2caa1201d4c6",
+              "is_selected": true,
+              "display_name": "Patienten-Portal",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "87572bdf-47e9-4d92-af86-c82185c3a224",
+              "is_selected": true,
+              "display_name": "Plz._Postfach",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "314b68eb-9e8f-4bb5-abdc-36bee5eb0353",
+              "is_selected": true,
+              "display_name": "Portalkunde",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "a9c48319-a85e-4ea7-bd44-6a22f7026eef",
+              "is_selected": true,
+              "display_name": "Postfach",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "a5028377-4e87-4662-8973-981a28aed407",
+              "is_selected": true,
+              "display_name": "Postleitzahl",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "85323c92-6501-4e40-b980-36e53693942d",
+              "is_selected": true,
+              "display_name": "Referenzkunde",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "f6b137cf-1800-42c1-b0b1-8fc1866e5b11",
+              "is_selected": true,
+              "display_name": "Schnittstellentechnologie",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "389e7df8-6c65-4d72-bf31-366ace187424",
+              "is_selected": true,
+              "display_name": "Server",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "6593b468-2805-42c9-859e-cea2f36e2b5c",
+              "is_selected": true,
+              "display_name": "SourceFile",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "db332f3f-ceb9-4f59-a3a8-60d3035223f5",
+              "is_selected": true,
+              "display_name": "Straße",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "e3b3e978-eeea-4868-a566-a1a37d998d07",
+              "is_selected": true,
+              "display_name": "Telefon",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "e435f4d8-4cb2-4068-bd5b-ed8ce73c057f",
+              "is_selected": true,
+              "display_name": "Werbesperre_Fax",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "dda2321b-92de-4d1b-85e2-37de339b7483",
+              "is_selected": true,
+              "display_name": "Werbesperre_Mail",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "4905cdc8-df14-43f1-a131-059571f7dcad",
+              "is_selected": true,
+              "display_name": "Werbesperre_Post",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "2bc6c2bb-19b3-45b7-a200-f8f880019850",
+              "is_selected": true,
+              "display_name": "Werbesperre_Telefon",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "3dbf75d7-d0e7-4fb0-b2c5-cc192c7dae70",
+              "is_selected": true,
+              "display_name": "WLAN",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "2214bef9-88ea-46fa-bf2b-a6ef600c7d75",
+          "is_selected": false,
+          "display_name": "s_geschaeftspartner2",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "2b10e015-a386-477a-9112-e485751bda13",
+              "is_selected": true,
+              "display_name": "ABC Klassifizierung",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "39d1a520-50e1-45e8-b18c-16950ffc065a",
+              "is_selected": true,
+              "display_name": "AirPrint Drucker",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "15e867ad-0d73-4f93-89df-c36d08f07223",
+              "is_selected": true,
+              "display_name": "Anzahl Ärzte",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "ee1f7c04-3fe6-43de-ab2b-bad9bebe1523",
+              "is_selected": true,
+              "display_name": "Anzahl Betten",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "fd235bcc-8d24-4580-949c-ccf09a1d9fe0",
+              "is_selected": true,
+              "display_name": "Anzahl EDP Dok_",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "4c957d6a-0d76-45b3-ae32-9e4cb86ad73c",
+              "is_selected": true,
+              "display_name": "Bedside Terminals",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "e0697d01-7e25-4869-ac60-69efde4c56af",
+              "is_selected": true,
+              "display_name": "Betreuung",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "0ac14980-f7c6-4b0c-90bc-945a7f0a75d5",
+              "is_selected": true,
+              "display_name": "Branchencode",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "c34a4632-db38-4a28-bd86-d515c7fc303b",
+              "is_selected": true,
+              "display_name": "Browser",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "85b4a023-963c-469b-befa-0236e86c0851",
+              "is_selected": true,
+              "display_name": "Clientplattform",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "fa229dc0-bc7a-4843-b06b-adc59b28c566",
+              "is_selected": true,
+              "display_name": "Datenbank",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "16433b46-fc52-4e45-ba57-c0dd6f3350c5",
+              "is_selected": true,
+              "display_name": "E-Mail",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "606cc35e-6089-4ddf-bb4a-ea46e7ddb168",
+              "is_selected": true,
+              "display_name": "ECP",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "488b2736-dd30-424a-bd6e-288c1a20ccde",
+              "is_selected": true,
+              "display_name": "Entlassmgmt System",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "1180c8a2-b2db-4d1d-8064-4d2b0f19d6e4",
+              "is_selected": true,
+              "display_name": "Fallzahl",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "dccc768f-513b-482b-8582-3a5d71fb38be",
+              "is_selected": true,
+              "display_name": "Geschäftspartner ID",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b4277f80-a191-430d-9565-20d88f5550bf",
+              "is_selected": true,
+              "display_name": "Hausnummer",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "e911d4ac-d3ff-44be-8d7b-613c9997ebed",
+              "is_selected": true,
+              "display_name": "Infrastruktur",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "349c3892-00a6-4fdd-9526-1a512b60bb9f",
+              "is_selected": true,
+              "display_name": "JAVA",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "083a159d-5e98-4580-b0e8-c96928fcaca8",
+              "is_selected": true,
+              "display_name": "KIS/AIS/PVS",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "ab57d74e-ca57-4801-9a4d-623d8b029558",
+              "is_selected": true,
+              "display_name": "Kommunikationsserver",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "eb21d59c-56cb-4b32-9864-fe1cdf9d38ac",
+              "is_selected": true,
+              "display_name": "Ländercode",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "58547e93-cb39-4513-bcce-efa592705a6a",
+              "is_selected": true,
+              "display_name": "Lizenzsequenz",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "e1dcac6d-5e42-4477-b999-048f3649365b",
+              "is_selected": true,
+              "display_name": "MDM-Lösung",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "31b23ed8-4194-43f6-8de1-55a0f5c801fe",
+              "is_selected": true,
+              "display_name": "Mobilgeräte",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "ee01aad7-e2cf-4bba-bde0-93451d346c2e",
+              "is_selected": true,
+              "display_name": "Mobiltelefon",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "a72136e0-b5fb-4944-a1c6-fe24fa492c18",
+              "is_selected": true,
+              "display_name": "Name 1",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "571ccbd2-f091-423e-a26a-43a3d7de1fcc",
+              "is_selected": true,
+              "display_name": "Name 2",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "37177f59-3db5-482c-bd63-19e58093fba0",
+              "is_selected": true,
+              "display_name": "Name 3",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "3f857d42-a608-4525-8666-f6ebb0979436",
+              "is_selected": true,
+              "display_name": "Name 4",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "06807241-6eed-4e17-8b46-a41929058138",
+              "is_selected": true,
+              "display_name": "Offline",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "9a1249e4-951f-48bd-8270-403042cdda81",
+              "is_selected": true,
+              "display_name": "Ort",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "4a7a4032-3020-4ab9-b0c4-6ff084db9b0a",
+              "is_selected": true,
+              "display_name": "Patienten-Portal",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "67506d64-42d1-4ba9-8973-1887333cf344",
+              "is_selected": true,
+              "display_name": "Plz. Postfach",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "50c6c9d1-25cc-4010-9de2-75838391cd59",
+              "is_selected": true,
+              "display_name": "Portalkunde",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "4dfd3bae-1bce-41ff-b8c9-301e8fcd9d0d",
+              "is_selected": true,
+              "display_name": "Postfach",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "460e6156-4c94-4521-92dd-412e0789bca5",
+              "is_selected": true,
+              "display_name": "Postleitzahl",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "1be89a6f-358c-4127-bb20-85797fdab27f",
+              "is_selected": true,
+              "display_name": "Referenzkunde",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "30676e2c-d02a-4e92-a1a3-9f7ed8bb1cae",
+              "is_selected": true,
+              "display_name": "Schnittstellentechnologie",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b3786a43-d813-480c-bd90-9bdf3023c025",
+              "is_selected": true,
+              "display_name": "Server",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "57cd6177-cd7c-478f-bc53-e3def2cf81dc",
+              "is_selected": true,
+              "display_name": "SourceFile",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "797ca95c-3cba-4ab4-87df-499e7c4b4bae",
+              "is_selected": true,
+              "display_name": "Straße",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "d7086bf3-6a1b-4a36-ae5a-d80aeff2ff14",
+              "is_selected": true,
+              "display_name": "Telefon",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "3af57b73-f319-441f-bed1-115f0e1367cd",
+              "is_selected": true,
+              "display_name": "Werbesperre Fax",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "5f912bfe-b7a1-4ff1-b6f3-9c3979e3fac2",
+              "is_selected": true,
+              "display_name": "Werbesperre Mail",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "6d83582c-0469-4dae-9248-2586865f80e8",
+              "is_selected": true,
+              "display_name": "Werbesperre Post",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b7bc3631-f169-4f3b-bf8f-57122e318720",
+              "is_selected": true,
+              "display_name": "Werbesperre Telefon",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "cfa42451-6119-4102-afb1-6b9d3a180a76",
+              "is_selected": true,
+              "display_name": "WLAN",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "4b6fba17-82a9-44dd-90a9-deb46fe60ef5",
+          "is_selected": false,
+          "display_name": "s_heads",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "b1c73db0-6722-4e10-a5da-8baa93c3f378",
+              "is_selected": true,
+              "display_name": "Auftragnehmer/Lizenznehmer",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "f8bb2196-b1bb-430b-a081-e39dd17df086",
+              "is_selected": true,
+              "display_name": "Belegwährung",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "54f27f89-ae28-4f7f-9593-e64941baab3f",
+              "is_selected": true,
+              "display_name": "Datum",
+              "type": "lakehouse_tables.column",
+              "data_type": "date",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "7bc58196-d140-46dc-8856-ebf288c246fc",
+              "is_selected": true,
+              "display_name": "Faktura_Nr.",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "9f59e86e-947d-4df2-a331-5ae364edb2f4",
+              "is_selected": true,
+              "display_name": "Regulierer",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "ba8d019d-bee7-488a-b02b-be07feb6b8eb",
+              "is_selected": true,
+              "display_name": "Source.Name",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "5514a073-e9fd-4127-b598-e800fd2d5c4d",
+              "is_selected": true,
+              "display_name": "Stornokennzeichen",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "83e91e63-e394-403b-8032-09b57e076d4d",
+              "is_selected": true,
+              "display_name": "Warenempfänger",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "af6dccd1-10d4-4389-8805-639e2d4f4fbb",
+          "is_selected": false,
+          "display_name": "s_heads2",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "33d7f7f5-e619-43cd-86ec-009b1b177a74",
+              "is_selected": true,
+              "display_name": "Auftragnehmer/Lizenznehmer",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "6b13c6b0-9d43-43bd-8e99-6de09213bb0d",
+              "is_selected": true,
+              "display_name": "Belegwährung",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "1aa4140b-2da7-442b-98f1-737371d9ffb0",
+              "is_selected": true,
+              "display_name": "Datum",
+              "type": "lakehouse_tables.column",
+              "data_type": "date",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "48c11528-5b0c-49f3-a519-4712b8b9834f",
+              "is_selected": true,
+              "display_name": "Faktura Nr_",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "594ff1b9-3931-408f-9db8-0ec6056722cb",
+              "is_selected": true,
+              "display_name": "Regulierer",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "9339ee4d-7bc1-432a-8554-1749682116d8",
+              "is_selected": true,
+              "display_name": "Source.Name",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "96028d56-6406-445a-bc39-330b80855596",
+              "is_selected": true,
+              "display_name": "Stornokennzeichen",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b19dbf0f-a6a0-4e68-a0ae-58f415663af2",
+              "is_selected": true,
+              "display_name": "Warenempfänger",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "0c2373d0-f18d-4f78-be6e-f4108b2ea5fc",
+          "is_selected": false,
+          "display_name": "s_items",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "f13bbe1f-02b7-450d-b285-7bf3e458aa73",
+              "is_selected": true,
+              "display_name": "Belegwährung",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "c41c9827-6680-4ece-b012-0798ffea6e3f",
+              "is_selected": true,
+              "display_name": "date",
+              "type": "lakehouse_tables.column",
+              "data_type": "date",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "a71f5f45-c124-4b8c-afb2-f139ae3b9c34",
+              "is_selected": true,
+              "display_name": "Faktura_Nr.",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "ad3f1489-8e82-43a9-888c-b6e678644df6",
+              "is_selected": true,
+              "display_name": "Fakturaposition_Nr.",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "9b67a7c1-4334-492a-a346-21aaad4c3861",
+              "is_selected": true,
+              "display_name": "Menge",
+              "type": "lakehouse_tables.column",
+              "data_type": "float",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "e7469e77-8d0b-4d9c-922c-4f2027ed83e4",
+              "is_selected": true,
+              "display_name": "Mengeneinheit",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "e288b193-2c80-4c32-bdd8-188768147d2b",
+              "is_selected": true,
+              "display_name": "Nettowert_in_Belegwährung",
+              "type": "lakehouse_tables.column",
+              "data_type": "float",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "a53f155d-80ca-4e88-93bd-0c841828c8a6",
+              "is_selected": true,
+              "display_name": "Produkt_ID",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "c13fa80a-275f-4341-bf86-bfe02ce5d9a2",
+              "is_selected": true,
+              "display_name": "Produkt-ID",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "0d3d8d55-0321-416d-84be-5c73eb48bf6e",
+              "is_selected": true,
+              "display_name": "SourceFile",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "db4d8a41-701c-4030-a4c3-2cd25eea35e5",
+              "is_selected": true,
+              "display_name": "time",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "da2a0ac9-f4ae-44f4-9a41-f751a985af78",
+          "is_selected": true,
+          "display_name": "s_ligatabelle",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "ea2c01bd-f77e-425f-9af4-ba9dbacf3267",
+              "is_selected": true,
+              "display_name": "Abfragedatum",
+              "type": "lakehouse_tables.column",
+              "data_type": "date",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "59be032d-4467-40b8-b5c0-f61757d11519",
+              "is_selected": true,
+              "display_name": "anz_gegentore",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "0b743514-e553-4607-94bc-15c2abc23bfc",
+              "is_selected": true,
+              "display_name": "anz_niederlagen",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "3a754314-3bcc-4ac2-b589-899b000b893d",
+              "is_selected": true,
+              "display_name": "anz_niederlagen_overtime",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "a2a5ec92-3ff6-44f6-80cf-44cb76ff4828",
+              "is_selected": true,
+              "display_name": "anz_niederlagen_penaltyschiessen",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "cb2591f2-438d-473f-b584-ee39f200d35d",
+              "is_selected": true,
+              "display_name": "anz_siege",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "9dfa22bf-4c5d-4e1b-8901-245a75b72ae3",
+              "is_selected": true,
+              "display_name": "anz_siege_overtime",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "18433f9d-4866-4356-97a4-c254de4300e1",
+              "is_selected": true,
+              "display_name": "anz_siege_penaltyschiessen",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "709bfb36-6a34-4d8c-b667-fbd9358103ae",
+              "is_selected": true,
+              "display_name": "anz_spiele",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "16cffd86-7fb7-48b8-afc6-29e744d64069",
+              "is_selected": true,
+              "display_name": "anz_tore",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "53a321e7-e4cd-4f0f-8a29-79d95e780c74",
+              "is_selected": true,
+              "display_name": "club",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "d09fa256-34be-4647-808f-fdb7afcfbdb3",
+              "is_selected": true,
+              "display_name": "platzierung",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "cd982280-1a9f-4919-b03a-137bc63f147e",
+              "is_selected": true,
+              "display_name": "punkte",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b64a5cb3-203f-482f-a071-4f1451513502",
+              "is_selected": true,
+              "display_name": "punkte_pro_spiel",
+              "type": "lakehouse_tables.column",
+              "data_type": "float",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "92e5f59c-e4b9-4d6b-8dbc-a152f01f3b90",
+              "is_selected": true,
+              "display_name": "SourceFile",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "875f369b-6a3d-4e2a-8eb3-9571fbc5e799",
+              "is_selected": true,
+              "display_name": "spieltendenz",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "cb69f809-6b55-41da-bf48-5b277bbc4dfe",
+              "is_selected": true,
+              "display_name": "toredifferenz",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "73ec8945-8fbf-4bc6-b7ea-2bb7b9e6f7aa",
+          "is_selected": false,
+          "display_name": "s_postleitzahlen",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "b06f2e11-1ab8-45ae-9976-b66d1939c34e",
+              "is_selected": true,
+              "display_name": "accuracy",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "0d7412da-dcc4-44db-8923-66e1d5492c2b",
+              "is_selected": true,
+              "display_name": "admin_code1",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "5434b4d5-3cfa-479f-9306-1ce726aa550e",
+              "is_selected": true,
+              "display_name": "admin_code2",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "823bae62-4e57-486f-b57b-60c4d522dc0d",
+              "is_selected": true,
+              "display_name": "admin_code3",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b648011e-8b4a-45fd-a1e8-c42dde16b3db",
+              "is_selected": true,
+              "display_name": "admin_name2",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "d7aa966d-3086-4da3-99d9-eb3d054edfe3",
+              "is_selected": true,
+              "display_name": "admin_name3",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "65ab2660-1ef5-49cc-b115-2d64a27ccdfc",
+              "is_selected": true,
+              "display_name": "Breitengrad",
+              "type": "lakehouse_tables.column",
+              "data_type": "float",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "6f1dd932-d020-40a8-ad97-2d38c50e08d2",
+              "is_selected": true,
+              "display_name": "Bundesland",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "40c593ab-107c-4aa9-b72b-1517ab7cabce",
+              "is_selected": true,
+              "display_name": "Koordinaten",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "77d97a69-febf-4b3b-a8cb-f3ba3b6bc890",
+              "is_selected": true,
+              "display_name": "Laengengrad",
+              "type": "lakehouse_tables.column",
+              "data_type": "float",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "a3b17cc2-5c8f-4213-96c6-01a4b6a15189",
+              "is_selected": true,
+              "display_name": "Ländercode",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "53713371-fa64-4d0f-99e1-2786f4543379",
+              "is_selected": true,
+              "display_name": "Ort",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "e4108ccd-28ec-4a9d-ba05-3a9c666ca670",
+              "is_selected": true,
+              "display_name": "Postleitzahl",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "9af715f6-80de-48c5-8744-6355132bae5e",
+              "is_selected": true,
+              "display_name": "Source.Name",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "265eb01e-3de8-4f31-af73-5f0d41facc24",
+          "is_selected": false,
+          "display_name": "s_postleitzahlen2",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "0e55ba15-3194-4c68-bc3b-a6735890d4d3",
+              "is_selected": true,
+              "display_name": "accuracy",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "0f6eda37-494d-46b4-b815-f37aeb7e7a24",
+              "is_selected": true,
+              "display_name": "admin_code1",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "d7009c42-b7cb-4db4-97f6-6f681bfea94b",
+              "is_selected": true,
+              "display_name": "admin_code2",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "12cd9cca-364f-40fa-a22f-35926fbfcd6a",
+              "is_selected": true,
+              "display_name": "admin_code3",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "8a11691e-dedd-4936-a82e-38ab625c2470",
+              "is_selected": true,
+              "display_name": "admin_name2",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "7e8a933e-10a7-484b-bf15-968967f8068b",
+              "is_selected": true,
+              "display_name": "admin_name3",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "3a62fd73-c600-431b-bd77-a11026b8b94f",
+              "is_selected": true,
+              "display_name": "Breitengrad",
+              "type": "lakehouse_tables.column",
+              "data_type": "float",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "49bd4929-9d38-4e72-81ae-f2d792be9c17",
+              "is_selected": true,
+              "display_name": "Bundesland",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "207579be-7049-4073-ba77-b87e02d0973f",
+              "is_selected": true,
+              "display_name": "Koordinaten",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "0b31e7c1-7a2a-4859-8eb9-242693e854a2",
+              "is_selected": true,
+              "display_name": "Laengengrad",
+              "type": "lakehouse_tables.column",
+              "data_type": "float",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "7616d2dd-753c-45b4-88c7-5b2b890c8aeb",
+              "is_selected": true,
+              "display_name": "Ländercode",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "7608a76d-b84a-46bd-8a7b-054e8b42c0e7",
+              "is_selected": true,
+              "display_name": "Ort",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "fd217dab-2cf0-498e-89c0-cb47c7b5a1eb",
+              "is_selected": true,
+              "display_name": "Postleitzahl",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "76f8f924-971d-44d3-bd62-5c60c0aef0cf",
+              "is_selected": true,
+              "display_name": "Source.Name",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "936886a3-8e22-48fe-af65-0d81733caeb7",
+          "is_selected": false,
+          "display_name": "s_produkt_hierarchie",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "76804680-e568-4fde-9532-90a92f51f688",
+              "is_selected": true,
+              "display_name": "Detail",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "4abecef4-f1e3-4b23-a664-9fd2680e125e",
+              "is_selected": true,
+              "display_name": "Kategorie",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "ca343808-402b-45d9-a0ba-3459db0a0781",
+              "is_selected": true,
+              "display_name": "Produkt",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "8a022da8-5e33-4dcf-b349-b2dae0e40520",
+              "is_selected": true,
+              "display_name": "Produkt_ID",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "e92066a4-6a8b-4f30-9574-684d887ec81c",
+              "is_selected": true,
+              "display_name": "Reihenfolge",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "52c4787f-d565-4a46-a45a-f8deb5508172",
+              "is_selected": true,
+              "display_name": "SourceFile",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "20318c1c-cdd5-413a-8310-7eb846520f7c",
+          "is_selected": false,
+          "display_name": "s_produkt_hierarchie2",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "aba04a8e-4505-491f-9109-f01caaa75478",
+              "is_selected": true,
+              "display_name": "Detail",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "3e518275-176b-48c1-ae87-39c5f22b1eb7",
+              "is_selected": true,
+              "display_name": "Kategorie",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "68633971-bd55-40e3-a303-a506daa144f7",
+              "is_selected": true,
+              "display_name": "Produkt",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "5cb72ddf-19e3-42d9-80b5-26dc52b4633c",
+              "is_selected": true,
+              "display_name": "Produkt ID",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "065d5c7e-a5e7-42bf-bc4c-aa3d8171cad5",
+              "is_selected": true,
+              "display_name": "Reihenfolge",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "137bd17b-358a-4916-8744-a81b4fe8ff7e",
+              "is_selected": true,
+              "display_name": "SourceFile",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "4ad30eb3-1021-43fb-b0f3-9db0a9909408",
+          "is_selected": true,
+          "display_name": "s_spielerstats_bio",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "460b861d-c33b-47e0-82ea-214b288c6dd5",
+              "is_selected": true,
+              "display_name": "Abfragedatum",
+              "type": "lakehouse_tables.column",
+              "data_type": "date",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "899ef995-b08f-4866-9258-1a8e41e347a1",
+              "is_selected": true,
+              "display_name": "alter",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "4face5bf-9ce9-4929-ac4d-164998bf6e72",
+              "is_selected": true,
+              "display_name": "anz_assists",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "01cf7468-b8f7-478e-8dd3-42058e9fb5a1",
+              "is_selected": true,
+              "display_name": "anz_teilgenommene_spiele",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "47838867-8451-41b3-88b7-e1264e2e6535",
+              "is_selected": true,
+              "display_name": "anz_tore",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "ded5399e-d550-42ac-b271-27628ebb4766",
+              "is_selected": true,
+              "display_name": "club",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "a7d156bc-503d-4da3-86a5-c47b8b3f45cd",
+              "is_selected": true,
+              "display_name": "geburtsort",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "e64cd444-5a73-4ba6-97d4-8a02e85d2053",
+              "is_selected": true,
+              "display_name": "geburtstag",
+              "type": "lakehouse_tables.column",
+              "data_type": "date",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b7817b4e-3f92-4cbc-afb4-049f9e79fe14",
+              "is_selected": true,
+              "display_name": "gewicht",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "9989de52-b832-4428-9fe8-b12cf13114e1",
+              "is_selected": true,
+              "display_name": "groesse",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "2a85fb05-180a-411b-9e72-00612d086305",
+              "is_selected": true,
+              "display_name": "position",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "2a505aaf-bcb1-4ff3-aba1-c71ed28657f9",
+              "is_selected": true,
+              "display_name": "rueckennummer",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "6789cf0e-d17d-4398-b3b5-13115975c3ea",
+              "is_selected": true,
+              "display_name": "schusshand",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "cd357719-e319-4b98-a79e-d20b1a8e6bec",
+              "is_selected": true,
+              "display_name": "SourceFile",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "97b2b109-98eb-4805-9a7d-7c9f26617ef8",
+              "is_selected": true,
+              "display_name": "spieler",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "4aaca13b-c168-4498-b88f-a0369ac7cb17",
+              "is_selected": true,
+              "display_name": "sum_punkte_gesamt",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "bc25fc8f-1360-4de2-b0ec-5b0ef4b7f53d",
+          "is_selected": true,
+          "display_name": "s_spielerstats_penalty",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "44e4844a-30b9-4233-832a-8dc89ffc2c6f",
+              "is_selected": true,
+              "display_name": "Abfragedatum",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "5a469824-4228-4412-9790-84a4df61d253",
+              "is_selected": true,
+              "display_name": "anz_10min_strafen",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "49b9244b-51fd-447d-98b1-6a61de40f26e",
+              "is_selected": true,
+              "display_name": "anz_20min_strafen",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "c58711bd-6577-465f-bcaa-64e6f8b89edb",
+              "is_selected": true,
+              "display_name": "anz_2min_strafen",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "d4e44201-654d-4b9d-8d7c-254fbdd5fade",
+              "is_selected": true,
+              "display_name": "anz_5min_strafen",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b92f3e30-444a-4421-b901-e9ec5157b987",
+              "is_selected": true,
+              "display_name": "anz_matchstrafen",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "cc51eeed-3f81-4a81-a7bf-206feec0dfdf",
+              "is_selected": true,
+              "display_name": "anz_teilgenommene_spiele",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "749e7772-5ca7-422b-99d1-4d26f65fe872",
+              "is_selected": true,
+              "display_name": "club",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "9b486a05-bae0-4fc2-96db-ae805361427d",
+              "is_selected": true,
+              "display_name": "durschn_eiszeit_pro_spiel",
+              "type": "lakehouse_tables.column",
+              "data_type": "float",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b5f7127e-4c3a-41a5-8a21-1bac02dcedd5",
+              "is_selected": true,
+              "display_name": "position",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "d902f0a7-6dad-4e7f-ad00-b8096fdeaac3",
+              "is_selected": true,
+              "display_name": "rueckennummer",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "07aed736-22a3-48da-b2cc-95c0c91db383",
+              "is_selected": true,
+              "display_name": "SourceFile",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "09241a46-4da6-46cb-a5d1-2033a34fe9ad",
+              "is_selected": true,
+              "display_name": "spieler",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "0bfe1e16-1038-4654-99a4-742d2ce29489",
+              "is_selected": true,
+              "display_name": "strafminuten_pro_spiel",
+              "type": "lakehouse_tables.column",
+              "data_type": "float",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "7b02dbed-c903-4338-8170-3c62bb1df374",
+              "is_selected": true,
+              "display_name": "sum_strafminuten",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "31a11b80-7996-4274-b9f2-627cc283f70f",
+          "is_selected": true,
+          "display_name": "s_spielerstats_penaltyshots",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "6b37efbe-c77d-4f7a-85c4-89486761fc15",
+              "is_selected": true,
+              "display_name": "Abfragedatum",
+              "type": "lakehouse_tables.column",
+              "data_type": "date",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "6bbacda8-feab-4afc-9028-a4f02ed16840",
+              "is_selected": true,
+              "display_name": "anteil_getroffene_shootouts_pct",
+              "type": "lakehouse_tables.column",
+              "data_type": "float",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "20705857-30da-40c3-ab4f-91997d0ac92b",
+              "is_selected": true,
+              "display_name": "anz_shootout_miss",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "7843e712-8c10-4448-909e-a24f1809eb34",
+              "is_selected": true,
+              "display_name": "anz_shootout_tore",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "97d7ae4f-ddd4-4062-80ef-819659291ed6",
+              "is_selected": true,
+              "display_name": "anz_shootout_versuche",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "808ebd46-57fb-4a44-9368-2474915e83e0",
+              "is_selected": true,
+              "display_name": "club",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "5bcf011a-aef1-4ef9-b8e4-c06f3ff4d7aa",
+              "is_selected": true,
+              "display_name": "position",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "532b4dc8-b94c-4da0-bcc8-b05c691e9335",
+              "is_selected": true,
+              "display_name": "rueckennummer",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "4246a137-785e-4fdc-84a1-a36bdd83ea5b",
+              "is_selected": true,
+              "display_name": "schusshand",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "64883147-e031-4cac-991b-61ad750443be",
+              "is_selected": true,
+              "display_name": "SourceFile",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "268461d8-973e-46fe-b14f-b83fd6e9b912",
+              "is_selected": true,
+              "display_name": "spieler",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "07e8980d-ec5c-481c-bb77-359e978ae821",
+          "is_selected": true,
+          "display_name": "s_spielerstats_shots",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "7bba4b70-ab25-4413-894e-4fa8c2376eda",
+              "is_selected": true,
+              "display_name": "Abfragedatum",
+              "type": "lakehouse_tables.column",
+              "data_type": "date",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "9cf5f569-9714-4ff4-ba76-9a487a1c95d8",
+              "is_selected": true,
+              "display_name": "anteil_erfolgreiche_torschuesse_pct",
+              "type": "lakehouse_tables.column",
+              "data_type": "float",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "59d403ed-5c1f-42ac-8353-1323fdb5d5c3",
+              "is_selected": true,
+              "display_name": "anz_assists",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "90319c25-2cf6-4ab4-b9db-bc8c0e18e050",
+              "is_selected": true,
+              "display_name": "anz_empty_net_tore",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "7b88c884-f1bd-4e6a-8819-0f5297eeaaef",
+              "is_selected": true,
+              "display_name": "anz_game_winning_tore",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "e777e17f-24da-4642-aedc-c012a5eefe00",
+              "is_selected": true,
+              "display_name": "anz_geblockte_schuesse",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "2acca957-c550-41c1-a93f-9f15ad42e03d",
+              "is_selected": true,
+              "display_name": "anz_schuesse_zu_siegtreffer",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b816242b-2363-45f8-ac21-8b818875aa21",
+              "is_selected": true,
+              "display_name": "anz_teilgenommene_spiele",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "9b60d8da-b0a3-4ef5-9bc3-22564595addf",
+              "is_selected": true,
+              "display_name": "anz_tore",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "1648caba-5ef3-4e2d-bbdd-67915abfe5c5",
+              "is_selected": true,
+              "display_name": "anz_tore_ueberzahl",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "84b5fac8-729e-41fc-9f90-b0471d7097bc",
+              "is_selected": true,
+              "display_name": "anz_tore_unterzahl",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "ee1fde07-ad14-40f0-a5db-45332c92ab4d",
+              "is_selected": true,
+              "display_name": "anz_torschuesse",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "862dd2dd-c7c1-4df0-a6b8-aab9b04f80cc",
+              "is_selected": true,
+              "display_name": "anz_verwandelte_shootouts_im_spiel",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "d94e41f6-71c4-428e-aa27-2d096e773c19",
+              "is_selected": true,
+              "display_name": "club",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "783cf7fc-7553-409e-845b-92491f931021",
+              "is_selected": true,
+              "display_name": "position",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "144f8b56-1c72-4ecc-a79b-60a9d4d81862",
+              "is_selected": true,
+              "display_name": "rueckennummer",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "ab05a73f-3c6f-4215-963d-4b07e8130e2f",
+              "is_selected": true,
+              "display_name": "schusshand",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "00d177a5-76a6-4e39-8c21-9924a766ae52",
+              "is_selected": true,
+              "display_name": "SourceFile",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "7b10dd11-add8-43ca-85f8-c33324f6fcda",
+              "is_selected": true,
+              "display_name": "spieler",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "0f248276-d020-4412-8469-78f6527ba711",
+          "is_selected": true,
+          "display_name": "s_spielerstats_timeonice",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "96eee7da-c483-4947-91c0-9c6c72b52ef0",
+              "is_selected": true,
+              "display_name": "Abfragedatum",
+              "type": "lakehouse_tables.column",
+              "data_type": "date",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "a09f1ad8-79e0-47d7-93b2-c373a1dd1093",
+              "is_selected": true,
+              "display_name": "anz_teilgenommene_spiele",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "000c5007-9e1c-49eb-9f0f-dcc4d6d8626b",
+              "is_selected": true,
+              "display_name": "anz_wechsel",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "58466d1f-2b01-4d11-94e6-ffd3f94e26b5",
+              "is_selected": true,
+              "display_name": "anz_wechsel_pro_spiel",
+              "type": "lakehouse_tables.column",
+              "data_type": "float",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "6368466a-5e42-4348-b35d-89a155998e0c",
+              "is_selected": true,
+              "display_name": "club",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "3cfe1a70-8206-4264-ae4d-695f3b6dd6d9",
+              "is_selected": true,
+              "display_name": "position",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "6e864fb5-769d-4776-9d44-33be2636a9cb",
+              "is_selected": true,
+              "display_name": "rueckennummer",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "8fbfeca3-5824-41d6-8276-e27e73007fea",
+              "is_selected": true,
+              "display_name": "SourceFile",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "3d927e31-c74e-4717-9cf8-02814fa32d1b",
+              "is_selected": true,
+              "display_name": "spieler",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "d3e82fd6-3f78-4c11-99e1-62a9355c1c7d",
+              "is_selected": true,
+              "display_name": "time_on_ice",
+              "type": "lakehouse_tables.column",
+              "data_type": "float",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "8e35823f-1067-46e3-86d5-b4a031ca9a6c",
+              "is_selected": true,
+              "display_name": "time_on_ice_pro_spiel",
+              "type": "lakehouse_tables.column",
+              "data_type": "float",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "12c213fd-fc4e-48ee-94de-bfea0b5dc7de",
+              "is_selected": true,
+              "display_name": "time_on_ice_pro_wechsel",
+              "type": "lakehouse_tables.column",
+              "data_type": "float",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "e15f44d4-bd2a-4f2d-90e3-b51dce36da86",
+          "is_selected": true,
+          "display_name": "s_spielerstats_uebersicht",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "69101ca6-96c8-417f-8734-ca5663a69e4b",
+              "is_selected": true,
+              "display_name": "Abfragedatum",
+              "type": "lakehouse_tables.column",
+              "data_type": "date",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "ff9f3c03-8b70-4349-952f-15f454f06c1f",
+              "is_selected": true,
+              "display_name": "anteil_gewonnene_bullies_pct",
+              "type": "lakehouse_tables.column",
+              "data_type": "float",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "0e3e4201-ecaa-4c73-a84f-0e8ce704ba17",
+              "is_selected": true,
+              "display_name": "anz_assists",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "9df8c24d-35ba-443d-8968-1eaea8c14f3c",
+              "is_selected": true,
+              "display_name": "anz_bullies_gewonnen",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "fb194341-96cd-4f98-a563-4b920acd4ad3",
+              "is_selected": true,
+              "display_name": "anz_bullies_verloren",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "3ba189be-68ea-4f63-8c86-ff5ae3676870",
+              "is_selected": true,
+              "display_name": "anz_strafen",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "fb84f66e-19da-4800-a2c3-5077f7e44f15",
+              "is_selected": true,
+              "display_name": "anz_teilgenommene_spiele",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "d8c59030-3717-4b74-9e7e-e8b276e0d733",
+              "is_selected": true,
+              "display_name": "anz_tore",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "46c13c4e-f630-4abb-94c2-2149591b6c67",
+              "is_selected": true,
+              "display_name": "anz_tore_powerplay",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "24243ed2-bc63-4a7c-8867-9b9c9dde774c",
+              "is_selected": true,
+              "display_name": "anz_tore_unterzahl",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "947f5212-46fa-4577-acb2-abd2e81829e5",
+              "is_selected": true,
+              "display_name": "club",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "9817282c-279d-425b-93dc-44168ee4448c",
+              "is_selected": true,
+              "display_name": "Diff",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "9c015ba4-cceb-443d-a8b4-a291c79d333a",
+              "is_selected": true,
+              "display_name": "position",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "7d182ee7-90b2-4eb6-8b83-e3451120665a",
+              "is_selected": true,
+              "display_name": "punkte_pro_spiel",
+              "type": "lakehouse_tables.column",
+              "data_type": "float",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "229ef0b7-b17e-451f-84ff-f00cd0b1afaa",
+              "is_selected": true,
+              "display_name": "rueckennummer",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "1f7337e9-0cea-46e5-9730-76834964d15a",
+              "is_selected": true,
+              "display_name": "schusshand",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "22139402-4926-4763-a146-643379cf3299",
+              "is_selected": true,
+              "display_name": "SourceFile",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "67cb1731-af4c-4418-8577-9389a87da857",
+              "is_selected": true,
+              "display_name": "spieler",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "62ad46a8-26db-43b7-9601-534193c320da",
+              "is_selected": true,
+              "display_name": "sum_punkte_gesamt",
+              "type": "lakehouse_tables.column",
+              "data_type": "bigint",
+              "description": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

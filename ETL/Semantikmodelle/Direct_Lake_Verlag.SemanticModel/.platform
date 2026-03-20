@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Direct_Lake_Verlag",
+    "description": "Separates Datenmodell auf Basis Lakehousedaten (Gold / Silber). Nutzt Direct Lake Modus."
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "7279edcc-9c52-ac66-40e0-0524aa68091f"
+  }
+}

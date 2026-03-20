@@ -1,0 +1,339 @@
+table s_calendar2
+	lineageTag: 741891e3-2174-4e9d-860a-695528f6a2d3
+	sourceLineageTag: [dbo].[s_calendar2]
+
+	column Date
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 067a829f-cbf1-4b6c-865e-9c717db38e06
+		sourceLineageTag: Date
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthNum
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: fdae322b-b79c-4261-b4e0-d7b7aad1262e
+		sourceLineageTag: MonthNum
+		summarizeBy: sum
+		sourceColumn: MonthNum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 9992171c-a906-4b5d-9dad-158dcd7da206
+		sourceLineageTag: Month
+		summarizeBy: none
+		sourceColumn: Month
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthLong
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: df445640-1eea-4a7a-b0ca-4a0f6ba6ee17
+		sourceLineageTag: MonthLong
+		summarizeBy: none
+		sourceColumn: MonthLong
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 095b8eb7-5ef3-4888-891d-d31d5f4bd28b
+		sourceLineageTag: Quarter
+		summarizeBy: none
+		sourceColumn: Quarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: a867ed19-cf27-44cb-8515-1683dc8df5b4
+		sourceLineageTag: Year
+		summarizeBy: sum
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column FiscalMonthNum
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 0eec64b3-6afa-42c7-8722-7e4d45a316aa
+		sourceLineageTag: FiscalMonthNum
+		summarizeBy: sum
+		sourceColumn: FiscalMonthNum
+
+		annotation SummarizationSetBy = Automatic
+
+	column FiscalMonth
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: e648f882-d2ed-4f33-a64b-12459f7a59b4
+		sourceLineageTag: FiscalMonth
+		summarizeBy: none
+		sourceColumn: FiscalMonth
+
+		annotation SummarizationSetBy = Automatic
+
+	column FiscalMonthLong
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 6689ff7e-4b05-4df9-a88b-f3d86ecfed54
+		sourceLineageTag: FiscalMonthLong
+		summarizeBy: none
+		sourceColumn: FiscalMonthLong
+
+		annotation SummarizationSetBy = Automatic
+
+	column FiscalQuarter
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 2dff9186-7f7c-439d-820c-d2978ca0c526
+		sourceLineageTag: FiscalQuarter
+		summarizeBy: none
+		sourceColumn: FiscalQuarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column FiscalYear
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 520d62a5-a4cf-47fc-9f08-daa2c5683b7f
+		sourceLineageTag: FiscalYear
+		summarizeBy: none
+		sourceColumn: FiscalYear
+
+		annotation SummarizationSetBy = Automatic
+
+	column CurMonthOffset
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 2c20a122-0437-46c8-864f-daa5409234f4
+		sourceLineageTag: CurMonthOffset
+		summarizeBy: sum
+		sourceColumn: CurMonthOffset
+
+		annotation SummarizationSetBy = Automatic
+
+	column CurQuarterOffset
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 4f11072f-cedd-4d50-b7e6-8fb56fa96062
+		sourceLineageTag: CurQuarterOffset
+		summarizeBy: sum
+		sourceColumn: CurQuarterOffset
+
+		annotation SummarizationSetBy = Automatic
+
+	column CurYearOffset
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 63e7e069-44be-4868-b8b4-db1228e9b65c
+		sourceLineageTag: CurYearOffset
+		summarizeBy: sum
+		sourceColumn: CurYearOffset
+
+		annotation SummarizationSetBy = Automatic
+
+	column FutureDate
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: c70ca057-bdf6-42f9-9fbc-d64a8c7cf31a
+		sourceLineageTag: FutureDate
+		summarizeBy: none
+		sourceColumn: FutureDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column CurFiscalYearOffset
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: c5117e6e-693c-4e5c-828c-b648686eda7b
+		sourceLineageTag: CurFiscalYearOffset
+		summarizeBy: sum
+		sourceColumn: CurFiscalYearOffset
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthYearNum
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 95036e09-9ae8-4858-a11d-f9e87f4f28f2
+		sourceLineageTag: MonthYearNum
+		summarizeBy: sum
+		sourceColumn: MonthYearNum
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthYear
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 27438099-17ac-44ea-942e-80b82c24f4bd
+		sourceLineageTag: MonthYear
+		summarizeBy: none
+		sourceColumn: MonthYear
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthYearLong
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: ee23c24a-faa0-4b26-95a4-b75f3ed44ded
+		sourceLineageTag: MonthYearLong
+		summarizeBy: none
+		sourceColumn: MonthYearLong
+
+		annotation SummarizationSetBy = Automatic
+
+	column WeekdayNum
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: f160b39c-ed1f-40d6-b0eb-4691307932de
+		sourceLineageTag: WeekdayNum
+		summarizeBy: sum
+		sourceColumn: WeekdayNum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Weekday
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: d23fe247-0ecb-4d06-adc7-270eb9453e58
+		sourceLineageTag: Weekday
+		summarizeBy: none
+		sourceColumn: Weekday
+
+		annotation SummarizationSetBy = Automatic
+
+	column WeekdayWeekend
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: eeb40602-730a-464b-8f1a-26a8390c705f
+		sourceLineageTag: WeekdayWeekend
+		summarizeBy: none
+		sourceColumn: WeekdayWeekend
+
+		annotation SummarizationSetBy = Automatic
+
+	column WeekSequenceNum
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 4af060bc-823b-40cf-8a73-48adf0df8b6b
+		sourceLineageTag: WeekSequenceNum
+		summarizeBy: sum
+		sourceColumn: WeekSequenceNum
+
+		annotation SummarizationSetBy = Automatic
+
+	column WeekDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: e0a4cf78-dc6c-44ce-8d9f-161881af814a
+		sourceLineageTag: WeekDate
+		summarizeBy: none
+		sourceColumn: WeekDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Week of Year'
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: f02e2868-3b00-46ef-adeb-84d6803f6516
+		sourceLineageTag: Week of Year
+		summarizeBy: sum
+		sourceColumn: Week of Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column CurWeekOffset
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: abe2fe72-4d88-44c9-b0e8-8da366d01d29
+		sourceLineageTag: CurWeekOffset
+		summarizeBy: sum
+		sourceColumn: CurWeekOffset
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Day of Year'
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: c75269a9-41ff-46ba-b91f-fa90a0bd4f8c
+		sourceLineageTag: Day of Year
+		summarizeBy: sum
+		sourceColumn: Day of Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column Flag_YTD
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: b8abc35e-78d5-4d65-9fdd-1102eabfec04
+		sourceLineageTag: Flag_YTD
+		summarizeBy: none
+		sourceColumn: Flag_YTD
+
+		annotation SummarizationSetBy = Automatic
+
+	column Flag_MTD
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: f2ffda6b-bbc1-470d-bb86-79e91af1e761
+		sourceLineageTag: Flag_MTD
+		summarizeBy: none
+		sourceColumn: Flag_MTD
+
+		annotation SummarizationSetBy = Automatic
+
+	column Flag_QTD
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 492ac714-ec07-473a-9f3f-02e25117574f
+		sourceLineageTag: Flag_QTD
+		summarizeBy: none
+		sourceColumn: Flag_QTD
+
+		annotation SummarizationSetBy = Automatic
+
+	column CurrentDayOffset
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: c34e8326-68a0-43a1-88b9-6bf1fc633650
+		sourceLineageTag: CurrentDayOffset
+		summarizeBy: sum
+		sourceColumn: CurrentDayOffset
+
+		annotation SummarizationSetBy = Automatic
+
+	partition s_calendar2-a6ce3198-9ec0-4a60-83fa-76ceea7ed2de = entity
+		mode: directLake
+		source
+			entityName: s_calendar2
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation IsTableInBiModel = True
+

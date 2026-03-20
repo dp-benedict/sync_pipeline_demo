@@ -1,0 +1,256 @@
+{
+  "name": "{{Dataset_Name}}",
+  "compatibilityLevel": 1604,
+  "model": {
+    "name": "{{Dataset_Name}}",
+    "culture": "en-US",
+    "collation": "Latin1_General_100_BIN2_UTF8",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "abrechnung_gefahrgut_demo",
+        "sourceLineageTag": "[dbo].[abrechnung_gefahrgut_demo]",
+        "columns": [
+          {
+            "name": "abrechnung_id",
+            "dataType": "int64",
+            "sourceColumn": "abrechnung_id",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "abrechnung_id",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "rechnungsnummer",
+            "dataType": "string",
+            "sourceColumn": "rechnungsnummer",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "rechnungsnummer",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "kundenname",
+            "dataType": "string",
+            "sourceColumn": "kundenname",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "kundenname",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "versanddatum",
+            "dataType": "dateTime",
+            "sourceColumn": "versanddatum",
+            "formatString": "General Date",
+            "sourceProviderType": "date",
+            "sourceLineageTag": "versanddatum",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "zugnummer",
+            "dataType": "string",
+            "sourceColumn": "zugnummer",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "zugnummer",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "startbahnhof",
+            "dataType": "string",
+            "sourceColumn": "startbahnhof",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "startbahnhof",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "zielbahnhof",
+            "dataType": "string",
+            "sourceColumn": "zielbahnhof",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "zielbahnhof",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "un_nummer",
+            "dataType": "string",
+            "sourceColumn": "un_nummer",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "un_nummer",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "stoffbezeichnung",
+            "dataType": "string",
+            "sourceColumn": "stoffbezeichnung",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "stoffbezeichnung",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "gefahrklasse",
+            "dataType": "string",
+            "sourceColumn": "gefahrklasse",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "gefahrklasse",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "brutto_gewicht_kg",
+            "dataType": "decimal",
+            "sourceColumn": "brutto_gewicht_kg",
+            "sourceProviderType": "decimal",
+            "sourceLineageTag": "brutto_gewicht_kg",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "transportpreis_eur",
+            "dataType": "decimal",
+            "sourceColumn": "transportpreis_eur",
+            "sourceProviderType": "decimal",
+            "sourceLineageTag": "transportpreis_eur",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "gefahrgutzuschlag_eur",
+            "dataType": "decimal",
+            "sourceColumn": "gefahrgutzuschlag_eur",
+            "sourceProviderType": "decimal",
+            "sourceLineageTag": "gefahrgutzuschlag_eur",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "gesamtbetrag_eur",
+            "dataType": "decimal",
+            "sourceColumn": "gesamtbetrag_eur",
+            "sourceProviderType": "decimal",
+            "sourceLineageTag": "gesamtbetrag_eur",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "abrechnung_gefahrgut_demo",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      }
+    ],
+    "expressions": [
+      {
+        "name": "DatabaseQuery",
+        "kind": "m",
+        "expression": "let\n    database = {{TDS_Endpoint}}\nin\n    database\n"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "SourceLineageTagType",
+        "value": "DatabaseFullyQualifiedName"
+      }
+    ]
+  }
+}

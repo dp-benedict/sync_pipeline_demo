@@ -1,0 +1,25 @@
+model b1a7f5d4-aa8f-4a1a-9ad0-bf0bca241c02
+	culture: en-US
+	collation: Latin1_General_100_BIN2_UTF8
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBI_QueryOrder = ["exec_requests_history","long_running_queries","frequently_run_queries","exec_sessions_history","s_heads2","s_bildurls2","s_postleitzahlen2","s_produkt_hierarchie2","s_geschaeftspartner2","s_branchen2","s_calendar2","s_spielerstats_penalty","s_ligatabelle","s_spielerstats_shots","s_spielerstats_timeonice","s_geschaeftspartner","s_items","s_produkt_hierarchie","s_bildurls","s_del2_clubs","s_spielerstats_bio","s_heads","s_branchen","s_postleitzahlen","s_calendar","s_spielerstats_uebersicht","s_spielerstats_penaltyshots","g_calendar","g_geschaeftspartner"]
+
+annotation SourceLineageTagType = DatabaseFullyQualifiedName
+
+ref table g_calendar
+ref table g_geschaeftspartner
+ref table s_heads2
+ref table s_bildurls2
+ref table s_postleitzahlen2
+ref table s_produkt_hierarchie2
+ref table s_geschaeftspartner2
+ref table s_branchen2
+ref table s_calendar2
+

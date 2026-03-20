@@ -1,0 +1,34 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {
+    "allowModernEvaluationEngine": true
+  },
+  "name": "DemoRMS",
+  "queryGroups": [],
+  "documentLocale": "en-US",
+  "queriesMetadata": {
+    "BRONZE_TarifrechnerGas": {
+      "queryId": "8c8236f0-5299-4560-ba72-82b5f9d907e9",
+      "queryName": "BRONZE_TarifrechnerGas",
+      "loadEnabled": false
+    },
+    "BRONZE_TarifrechnerStrom": {
+      "queryId": "90586c09-8106-4319-8a25-16e375854b23",
+      "queryName": "BRONZE_TarifrechnerStrom",
+      "loadEnabled": false
+    },
+    "DefaultDestination": {
+      "queryId": "08b9eedb-adfe-4336-929b-c917a698364c",
+      "queryName": "DefaultDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "Lakehouse",
+      "kind": "Lakehouse",
+      "connectionId": "{\"ClusterId\":\"5575a0f1-14ff-4821-b3fa-d2ce730d723e\",\"DatasourceId\":\"12c58ec2-b414-4bd0-a4ab-9bd71d7e051e\"}"
+    }
+  ]
+}

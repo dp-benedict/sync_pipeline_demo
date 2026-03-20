@@ -1,0 +1,54 @@
+table s_branchen2
+	lineageTag: ef06dfec-d72b-4d00-bc53-242d71d34e62
+	sourceLineageTag: [dbo].[s_branchen2]
+
+	column BranchenId
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: b1a23135-0752-4ba4-96e4-1650fffd130c
+		sourceLineageTag: BranchenId
+		summarizeBy: sum
+		sourceColumn: BranchenId
+
+		annotation SummarizationSetBy = Automatic
+
+	column Branche
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: fcc941a9-a0a2-4e71-888e-9d223fd9233c
+		sourceLineageTag: Branche
+		summarizeBy: none
+		sourceColumn: Branche
+
+		annotation SummarizationSetBy = Automatic
+
+	column Zuordnung
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 0ea02f44-9e35-41d7-b979-b57896cfa775
+		sourceLineageTag: Zuordnung
+		summarizeBy: none
+		sourceColumn: Zuordnung
+
+		annotation SummarizationSetBy = Automatic
+
+	column SourceFile
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: d7325362-d247-43fd-b96b-1f6c2a60eaf4
+		sourceLineageTag: SourceFile
+		summarizeBy: none
+		sourceColumn: SourceFile
+
+		annotation SummarizationSetBy = Automatic
+
+	partition s_branchen2-8f299e24-1049-410d-bfa0-c64e45fdb863 = entity
+		mode: directLake
+		source
+			entityName: s_branchen2
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation IsTableInBiModel = True
+

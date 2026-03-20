@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "Create_CDC",
+    "description": "Feature Demo / Testing für einen Change-Data-Capture-Prozess"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "76ad663a-af0e-a1e7-4940-ac683637f2b5"
+  }
+}

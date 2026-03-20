@@ -1,0 +1,34 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {
+    "allowFastCopy": false
+  },
+  "name": "TestSAP",
+  "queryGroups": [],
+  "documentLocale": "de-DE",
+  "queriesMetadata": {
+    "Transaktionen": {
+      "queryId": "0ac45852-d0c9-4cc1-bc45-46feea01b2e5",
+      "queryName": "Transaktionen",
+      "loadEnabled": false
+    },
+    "Transaktionen_DataDestination": {
+      "queryId": "e79e74f2-e068-4883-999f-e146ab53a9aa",
+      "queryName": "Transaktionen_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "https://datenpioniere-my.sharepoint.com/personal/benedict_altgassen_datenpioniere_de/",
+      "kind": "Web",
+      "connectionId": "{\"ClusterId\":\"5575a0f1-14ff-4821-b3fa-d2ce730d723e\",\"DatasourceId\":\"a14f0303-4083-4a43-ab29-8632cf6a1519\"}"
+    },
+    {
+      "path": "Lakehouse",
+      "kind": "Lakehouse",
+      "connectionId": "{\"ClusterId\":\"5575a0f1-14ff-4821-b3fa-d2ce730d723e\",\"DatasourceId\":\"12c58ec2-b414-4bd0-a4ab-9bd71d7e051e\"}"
+    }
+  ]
+}

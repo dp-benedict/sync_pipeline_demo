@@ -1,0 +1,98 @@
+table s_heads2
+	lineageTag: e408d96f-3701-41e9-871c-6cad84dad9a9
+	sourceLineageTag: [dbo].[s_heads2]
+
+	column 'Source.Name'
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 5514a2ec-7578-49d2-9dda-7b0b1f7977a9
+		sourceLineageTag: Source.Name
+		summarizeBy: none
+		sourceColumn: Source.Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Faktura Nr_'
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: b08dcbda-f642-45b0-9660-e3655b383e90
+		sourceLineageTag: Faktura Nr_
+		summarizeBy: sum
+		sourceColumn: Faktura Nr_
+
+		annotation SummarizationSetBy = Automatic
+
+	column Datum
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 1ef38e29-4eb6-4d78-a152-d4bdabd8379c
+		sourceLineageTag: Datum
+		summarizeBy: none
+		sourceColumn: Datum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Stornokennzeichen
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: f6a36469-c9b0-4589-b570-ca6bca4b7d07
+		sourceLineageTag: Stornokennzeichen
+		summarizeBy: none
+		sourceColumn: Stornokennzeichen
+
+		annotation SummarizationSetBy = Automatic
+
+	column Regulierer
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 58f3a7b7-8485-4f77-8744-f0973593761b
+		sourceLineageTag: Regulierer
+		summarizeBy: sum
+		sourceColumn: Regulierer
+
+		annotation SummarizationSetBy = Automatic
+
+	column Warenempfänger
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: bd8b2dd6-04b3-41dd-8d8c-4e280e90b906
+		sourceLineageTag: Warenempfänger
+		summarizeBy: sum
+		sourceColumn: Warenempfänger
+
+		annotation SummarizationSetBy = Automatic
+
+	column Auftragnehmer/Lizenznehmer
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 8402e3da-be19-4588-af9c-d6980a36bd22
+		sourceLineageTag: Auftragnehmer/Lizenznehmer
+		summarizeBy: sum
+		sourceColumn: Auftragnehmer/Lizenznehmer
+
+		annotation SummarizationSetBy = Automatic
+
+	column Belegwährung
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: e71b6248-a146-4720-8d68-789a20c6e312
+		sourceLineageTag: Belegwährung
+		summarizeBy: none
+		sourceColumn: Belegwährung
+
+		annotation SummarizationSetBy = Automatic
+
+	partition s_heads2-0f37c9df-d923-4e9b-b1b3-e41c2592250f = entity
+		mode: directLake
+		source
+			entityName: s_heads2
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation IsTableInBiModel = True
+

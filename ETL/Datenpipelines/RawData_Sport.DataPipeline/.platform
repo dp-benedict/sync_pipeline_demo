@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataPipeline",
+    "displayName": "RawData_Sport"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "40e13427-b073-9da8-463d-039b8b3fc67b"
+  }
+}

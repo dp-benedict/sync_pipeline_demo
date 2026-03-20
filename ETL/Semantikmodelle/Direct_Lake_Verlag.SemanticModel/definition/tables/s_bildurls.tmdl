@@ -1,0 +1,44 @@
+table s_bildurls
+	lineageTag: a7b5f02b-8e8c-4add-85a0-b0feca1026a3
+	sourceLineageTag: [dbo].[s_bildurls]
+
+	column Bild
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 519c8578-3a6c-49b4-90ce-1d5a1b3d4dca
+		sourceLineageTag: Bild
+		summarizeBy: sum
+		sourceColumn: Bild
+
+		annotation SummarizationSetBy = Automatic
+
+	column Bild-URL
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: c2c775f4-2a54-46ca-bc81-d35c5600f1ed
+		sourceLineageTag: Bild-URL
+		summarizeBy: none
+		sourceColumn: Bild-URL
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'BildURLS.xlsx'
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ce35d436-616d-4dd4-aac3-01c0221d77f5
+		sourceLineageTag: BildURLS.xlsx
+		summarizeBy: none
+		sourceColumn: BildURLS.xlsx
+
+		annotation SummarizationSetBy = Automatic
+
+	partition s_bildurls = entity
+		mode: directLake
+		source
+			entityName: s_bildurls
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

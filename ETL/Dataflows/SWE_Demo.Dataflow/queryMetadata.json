@@ -1,0 +1,43 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {},
+  "name": "SWE_Demo",
+  "queryGroups": [],
+  "documentLocale": "en-US",
+  "queriesMetadata": {
+    "Kalender": {
+      "queryId": "828b9253-d662-411f-b3be-5791bd1e403b",
+      "queryName": "Kalender",
+      "loadEnabled": false
+    },
+    "DefaultDestination": {
+      "queryId": "144a31bc-dfec-478e-bd2a-8ee47d50511e",
+      "queryName": "DefaultDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "TarifrechnerAbschlüsseGas 1": {
+      "queryId": "9562fdd7-bd0a-4e32-831b-0c13edca9fd3",
+      "queryName": "TarifrechnerAbschlüsseGas 1",
+      "loadEnabled": false
+    },
+    "TarifrechnerAbschlüsse": {
+      "queryId": "f4a21814-9754-487e-9649-d2a00a2e5673",
+      "queryName": "TarifrechnerAbschlüsse",
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "Lakehouse",
+      "kind": "Lakehouse",
+      "connectionId": "{\"ClusterId\":\"5575a0f1-14ff-4821-b3fa-d2ce730d723e\",\"DatasourceId\":\"12c58ec2-b414-4bd0-a4ab-9bd71d7e051e\"}"
+    },
+    {
+      "path": "https://datenpioniere-my.sharepoint.com/personal/benedict_altgassen_datenpioniere_de/",
+      "kind": "Web",
+      "connectionId": "{\"ClusterId\":\"5575a0f1-14ff-4821-b3fa-d2ce730d723e\",\"DatasourceId\":\"db349805-f1cc-4613-b3cb-2f3aebd8aa3c\"}"
+    }
+  ],
+  "fastCombine": true
+}
