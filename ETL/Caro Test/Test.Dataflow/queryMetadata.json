@@ -1,0 +1,39 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {
+    "allowModernEvaluationEngine": true
+  },
+  "name": "Test",
+  "queryGroups": [],
+  "documentLocale": "de-DE",
+  "queriesMetadata": {
+    "Orders": {
+      "queryId": "336ebd9b-2a49-40c1-a2e7-a555060456ef",
+      "queryName": "Orders",
+      "loadEnabled": false
+    },
+    "Employees": {
+      "queryId": "a885d1a1-da9e-46ce-874e-042804044a84",
+      "queryName": "Employees",
+      "loadEnabled": false
+    },
+    "Orders_DataDestination": {
+      "queryId": "472af597-9ac3-45be-93e0-b806d61d5467",
+      "queryName": "Orders_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "https://datenpioniere.sharepoint.com/sites/Consulting/",
+      "kind": "SharePoint",
+      "connectionId": "{\"ClusterId\":\"5575a0f1-14ff-4821-b3fa-d2ce730d723e\",\"DatasourceId\":\"32675b5e-b30d-4a9c-b484-a5a76f91f24f\"}"
+    },
+    {
+      "path": "Lakehouse",
+      "kind": "Lakehouse",
+      "connectionId": "{\"ClusterId\":\"5575a0f1-14ff-4821-b3fa-d2ce730d723e\",\"DatasourceId\":\"8f4905af-9abc-4ed4-bbf9-78f8f64bbb43\"}"
+    }
+  ]
+}
